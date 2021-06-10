@@ -4,6 +4,7 @@
 
 #bestCofe div{
     display: inline-block;
+    padding-left: 10%;
 }
 
 #bestCofe div:last-child{
@@ -14,4 +15,8 @@ p{
     
     padding-left: 20%;
     
+}
+
+#join{
+    text-align: center;
 }
