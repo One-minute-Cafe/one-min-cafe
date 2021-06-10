@@ -1,21 +1,23 @@
 *{
     box-sizing: border-box;
-    padding: 10px;
-    background-color: bisque;
+    
 }
 #div2{
     float: left;
     margin-top: 10px;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 #div3{
     float: right;
 }
+
+
 #footer1{
-    background-color: bisque;
-
-
+    width: 100%;
+position: absolute;
+    height:100px;
+        background-color: blueviolet;
+        margin-bottom: 50px;
 }
-
 
