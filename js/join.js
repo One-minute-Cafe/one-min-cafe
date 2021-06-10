@@ -49,7 +49,7 @@ function submitFormDriver(event){
     const phone=event.target.phone.value
     const time=event.target.time.value
     
-    // console.log(time,firstName,lastName,phone)
+    console.log(time,firstName,lastName,phone)
     new DriverForm(firstName,lastName,phone,time);
     
     savingLs();
@@ -79,6 +79,7 @@ function PartnerForm(fname,lname,number,location,bestCofe){
     this.bestCofe=bestCofe;
 
     PartnerForm.all.push(this)
+    
 
 }
 
@@ -105,4 +106,31 @@ parnterForm.reset()
 
 
 }
-submitPartnerForm()
+// submitPartnerForm()
+
+
+// after submitted parnter
+
+let submitedPartner=document.getElementById('afterSubmited')
+
+parnterForm.addEventListener('submit',after)
+
+function after(){
+parnterForm.style.display='none'
+driver.style.display='block'
+let text=document.createElement('p')
+submitedDriver.appendChild(text)
+text.textContent=`${PartnerForm.all.fname} ${PartnerForm.all.lname} Thanks to choose our website ,we will contact with you soon `
+
+}
+// after submitted driver
+
+driverForm.addEventListener('submit',function(){
+    driverForm.style.display='none'
+    parnter.style.display='block'
+    let text=document.createElement('p')
+    submitedPartner.appendChild(text)
+    text.textContent=`${DriverForm.all.firstName} ${DriverForm.all.lastName} Thanks to choose our website ,we will contact with you soon `
+
+
+})
