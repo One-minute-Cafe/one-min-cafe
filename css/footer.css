@@ -1,13 +1,17 @@
 *{
     box-sizing: border-box;
     padding: 10px;
+    background-color: bisque;
 }
 #div2{
     float: left;
     margin-top: 10px;
-  
+    background-color: bisque;
 }
 
 #div3{
     float: right;
+}
+#footer1{
+    background-color: bisque;
 }
