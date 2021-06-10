@@ -6,14 +6,14 @@ let parnterForm=document.getElementById('partnerForm')
 
 
 driver.addEventListener('click',function(e){
-    event.preventDefault();
+    e.preventDefault();
     parnter.style.display='none'
     driverForm.style.display='block'
 })
 
 
 parnter.addEventListener('click',function(){
-    event.preventDefault();
+    e.preventDefault();
     driver.style.display='none'
     parnterForm.style.display='block'
 })
