@@ -11,13 +11,13 @@
 }
 
 #driverForm{
-    /* display: none; */
+    display: none;
     text-align: center;
   
 }
 
 #partnerForm{
-    /* display:none; */
+    display:none;
     text-align: center;
 }
 input{
