@@ -1,17 +1,15 @@
 *{
     box-sizing: border-box;
-    padding: 10px;
-    background-color: bisque;
 }
-#div2{
+#div1{
     float: left;
     margin-top: 10px;
-    background-color: bisque;
+    background-color: #492922;
+    col
 }
-
-#div3{
+#div2{
     float: right;
-}
-#footer1{
-    background-color: bisque;
-}
+    background-color: #492922; 
+footer{
+    background-color: #492922;
+} 
