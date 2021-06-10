@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+#bestCofe div{
+    display: inline-block;
+    padding-left: 10%;
+}
+
+#bestCofe div:last-child{
+    padding-left: 10%;
+}
+p{
+    display: inline-block;
+    
+    padding-left: 20%;
+    
+}
+
+#join{
+    text-align: center;
+}
