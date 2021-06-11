@@ -53,7 +53,11 @@ function submitFormDriver(event){
     
     savingLs();
    
-    
+    driverForm.style.display='none'
+    parnter.style.display='block'
+    let text=document.createElement('p')
+    submitedPartner.appendChild(text)
+    text.textContent=`${firstName} ${lastName} Thanks to choose our website ,we will contact with you soon `
     driverForm.reset();
 
     
@@ -76,6 +80,7 @@ function PartnerForm(fname,lname,number,location,bestCofe){
     this.number=number;
     this.location=location;
     this.bestCofe=bestCofe;
+  
 
     PartnerForm.all.push(this)
     
@@ -95,12 +100,17 @@ const number=event.target.number.value;
 const location=event.target.location.value;
 const bestCofe=event.target.bestCofe.value;
 
-// console.log(fname,lname,number,location,bestCofe)
 
 new PartnerForm(fname,lname,number,location,bestCofe)
 
 localStorage.setItem('partners',JSON.stringify(PartnerForm.all))
 
+parnterForm.style.display='none'
+driver.style.display='block'
+let text=document.createElement('p')
+submitedPartner.appendChild(text)
+
+text.textContent=`${fname} ${lname} Thanks to choose our website ,we will contact with you soon `
 parnterForm.reset()
 
 
@@ -112,24 +122,3 @@ parnterForm.reset()
 
 let submitedPartner=document.getElementById('afterSubmited')
 
-parnterForm.addEventListener('submit',after)
-
-function after(){
-parnterForm.style.display='none'
-driver.style.display='block'
-let text=document.createElement('p')
-submitedDriver.appendChild(text)
-text.textContent=`${PartnerForm.all.fname} ${PartnerForm.all.lname} Thanks to choose our website ,we will contact with you soon `
-
-}
-// after submitted driver
-
-driverForm.addEventListener('submit',function(){
-    driverForm.style.display='none'
-    parnter.style.display='block'
-    let text=document.createElement('p')
-    submitedPartner.appendChild(text)
-    text.textContent=`${DriverForm.all.firstName} ${DriverForm.all.lastName} Thanks to choose our website ,we will contact with you soon `
-
-
-})
