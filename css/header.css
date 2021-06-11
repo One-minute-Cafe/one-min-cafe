@@ -2,16 +2,22 @@
     box-sizing: border-box;
 }
 header{
+    position: relative;
    background-color: #492922;
+    top: 20px;
 }
 li{
 display: inline;
+
 }
+nav{
+}
+
 a{
     text-decoration: none;
     color :#e56f05;
 }
 #logo{
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 }

@@ -2,13 +2,12 @@
     box-sizing: border-box;
     
 }
-#div2{
+#div1{
     float: left;
     margin-top: 10px;
     /* background-color: bisque; */
 }
-
-#div3{
+#div2{
     float: right;
 }
 
