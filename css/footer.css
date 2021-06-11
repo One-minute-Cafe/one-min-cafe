@@ -2,7 +2,10 @@
     box-sizing: border-box;
     
 }
+
 #div1{
+
+
     float: left;
     margin-top: 10px;
     /* background-color: bisque; */
@@ -11,6 +14,7 @@
     float: right;
 }
 
+in
 #footer1{
     width: 100%;
 position: absolute;
