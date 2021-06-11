@@ -14,7 +14,7 @@
     float: right;
 }
 
-
+in
 #footer1{
     width: 100%;
 position: absolute;
@@ -22,5 +22,4 @@ position: absolute;
         background-color: blueviolet;
         margin-bottom: 50px;
 }
-
 
