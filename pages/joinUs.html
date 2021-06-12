@@ -3,14 +3,34 @@
 <head>
    
     <title>Document</title>
-    <link rel="stylesheet" href="../css/footer.css">
+    <!-- <link rel="stylesheet" href="../css/footer.css"> -->
 
-    <link rel="stylesheet" href="../css/header.css">
+    <!-- <link rel="stylesheet" href="../css/header.css"> -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/join.css">
 </head>
 <body>
+
     <header>
+        <div class="overlay">
+    <h1>In One Minute</h1>
+    <!-- <h3>Reasons for Choosing US</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p> -->
+        <!-- <br>
+        <button>READ MORE</button> -->
+
+        <nav>
+            <!-- <img id ="logo" src="img/Untitled-3.png"> -->
+            <li><a href="">Home</a></li>
+            <li><a href="">Cafes</a></li>
+            <li><a href="">Join Us</a></li>
+            <li><a href="">About Us</a></li>
+            
+         </nav>
+            </div>
+    </header>
+    
+    <!-- <header>
         <nav>
            <img id ="logo" src="img/Untitled-3.png">
            <li><a href="">Home</a></li>
@@ -19,52 +39,95 @@
            <li><a href="">About Us</a></li>
            
         </nav>
-    </header>
+    </header> -->
     <main>
 
-        <div id="driver"><a href="" id="dr">Driver</a></div>
+        <div class="cards-list">
+  
+            <div class="card 1" id="partner" >
+              <div class="card_image"> <img src="../img/partner.jpg" /> </div>
+              <div class="card_title title-white" >
+                <p>partner</p>
+              </div>
+            </div>
+            
+              <div class="card 2" id="driver">
+              <div class="card_image">
+                <img src="../img/driver.png" />
+                </div>
+              <div class="card_title title-white" >
+                <p>Driver</p>
+              </div>
+            </div>
+
+
+        <!-- <div id="driver"><a href="" id="dr">Driver</a></div>
       
 
-        <div id="partner"> <a href="" id="pa">Cofe Partner</a></div>
+        <div id="partner"> <a href="" id="pa">Cofe Partner</a></div> -->
 
-        <form action="" id="partnerForm" >
-            <label for="fname">First name:</label>
-            <input type="text"  name="fname" ><br><br>
-            <label for="lname">Last name:</label>
-            <input type="text"name="lname"><br><br>
-            <label for="fname">Phone:</label>
-            <input type="number" name="number"><br><br>
-            <label for="lname">Location:</label>
-            <input type="text"  name="location" ><br><br>
-            <label for="lname">Best Cofe :</label>
-            <input type="text" name="bestCofe" ><br><br>
-            <label for="file" >image :</label>
-            <input id="uploadImage" type="file" name="imageFile" /><br>
-            <img id="imageFile" src="" alt="">
-            <input type="submit" value="Submit">
 
-        </form>
+        <section id="forms">
 
-        <br><br>
-        <form action="" id="driverForm" >
-            <label for="firstName">First name:</label>
-            <input type="text"  name="firstName" ><br><br>
-            <label for="lastName">Last name:</label>
-            <input type="text"  name="lastName" ><br><br>
-            <label for="phone">Phone:</label>
-            <input type="number" name="phone" ><br><br>
-            <label for="time">Avaliable in any time:</label>
-            <input type="text"  name="time" ><br><br>
-            <input type="submit" value="Submit">
-        </form>
-
+            
+            <form action="" id="partnerForm" >
+                <label for="fname">First name:</label>
+                <input type="text"  name="fname" ><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text"name="lname"><br><br>
+                <label for="fname">Phone:</label>
+                <input type="number" name="number"><br><br>
+                <label for="lname">Location:</label>
+                <input type="text"  name="location" ><br><br>
+                <label for="lname">Best Cofe :</label>
+                <input type="text" name="bestCofe" ><br><br>
+                <label for="file" >image :</label>
+                <input id="uploadImage" type="file" name="imageFile" /><br>
+                <img id="imageFile" src="" alt="">
+                <input type="submit" value="Submit">
+                
+            </form>
+            
+            <br><br>
+            <form action="" id="driverForm" >
+                <label for="firstName">First name:</label>
+                <input type="text"  name="firstName" ><br><br>
+                <label for="lastName">Last name:</label>
+                <input type="text"  name="lastName" ><br><br>
+                <label for="phone">Phone:</label>
+                <input type="number" name="phone" ><br><br>
+                <label for="time">Avaliable in any time:</label>
+                <input type="text"  name="time" ><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+            
         <section id="afterSubmited">
            
         </section>
     </main>
 
     
-    <footer id="footer1">
+    <footer>
+        <div class="overlay">
+    
+    
+        <nav>
+           
+            <a href="https://web.facebook.com/"><img src="img/fb-icon.png" alt=""></a>
+            <a href="https://twitter.com/"><img src="img/twit-icon.png" alt=""></a>
+            <a href="https://www.instagram.com/"><img src="img/insta-icon.png" alt=""></a>
+            
+         </nav>
+            </div>
+        </footer>
+    
+
+
+
+
+
+    <!-- <footer id="footer1">
         <hr id="hr1">
         <div id="div1">
             <div id="div2">
@@ -77,7 +140,7 @@
                 <a href="https://www.instagram.com/"><img src="img/insta-icon.png" alt=""></a>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="../js/join.js"></script>
   
 </body>
