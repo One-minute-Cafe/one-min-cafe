@@ -1,5 +1,5 @@
-let driver=document.getElementById('dr')
-let parnter=document.getElementById('pa')
+let driver=document.getElementById('driver')
+let parnter=document.getElementById('partner')
 let driverForm=document.getElementById('driverForm')
 let parnterForm=document.getElementById('partnerForm')
 

@@ -1,4 +1,5 @@
-#driver{
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+/* #driver{
     margin-top:5% ;
     display: inline-block;
     padding-left: 30%;
@@ -8,7 +9,7 @@
 #partner{
     display: inline-block;
     border: black;
-}
+} */
 
 #driverForm{
     display: none;
@@ -20,7 +21,215 @@
     display:none;
     text-align: center;
 }
-input{
+/* input{
     padding-left: 50px;
     margin-left: 5%;
+} */
+
+/* main div:first-child{
+    background-color: blue;
+   
+} */
+ 
+
+.cards-list {
+    /* z-index: 0; */
+    width: 100%;
+  margin-top: 10%;
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+  }
+  
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+  }
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+  p{
+      color: darkblue;
+  }
+
+
+
+
+
+
+  input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+#forms{
+   
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+    margin-bottom: 10%;
+
+  }
+
+
+  #afterSubmited p{
+    
+      text-align: center;
+      font-size: large;
+      font-family: 'Oswald', sans-serif;
+      margin-top: 10%;
+      margin-bottom: 10%;
+  }
+
+  /* header */
+
+  *{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 900px;}
+
+
+header {
+	/* background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fcoffee.html&psig=AOvVaw0BXoXcdhe1d0WCWIgZvr58&ust=1623529978956000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjIiPW2kPECFQAAAAAdAAAAABAE'); */
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient( 135deg, #835C3B 10%, #f86f256b 100%);
+	
+}
+nav {
+    width: 30%;
+    float: right;
+    padding: 12px;
+   
+ } 
+ li {
+    display: inline-block; 
+    padding-left: 10%; }
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+/* h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+} */
+
+/* button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+} */
+
+
+footer {
+	/* background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fcoffee.html&psig=AOvVaw0BXoXcdhe1d0WCWIgZvr58&ust=1623529978956000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjIiPW2kPECFQAAAAAdAAAAABAE'); */
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+
+footer .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient( 135deg, #835C3B 10%, #835C3B 100%);
+	
+}
+
+footer .overlay nav{
+    background :#45a049;
 }
