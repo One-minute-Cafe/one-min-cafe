@@ -38,6 +38,7 @@
   margin-top: 10%;
     /* justify-content: space-around; */
     /* flex-wrap: wrap; */
+    /* display: flex; */
   }
   
   .card {
@@ -128,7 +129,7 @@
   }
   
 #forms{
-   
+   /* position: absolute; */
     border-radius: 5px;
     /* background-color: #f2f2f2; */
     padding: 20px;
@@ -155,6 +156,8 @@ body{height: 900px;}
 
 
 body {
+
+  background-color: rgb(233, 209, 178);
 	font-family: 'PT Sans Caption',"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	font-size: 3vh;
 }
@@ -185,12 +188,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 100vh;
+	height: 80px;
 	padding: 1em;
 	box-sizing: border-box;
 	color: white;
-	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeI_G_6pJEupgBoNQrBFnt8ag67Avn-k-R4A&usqp=CAU) center center no-repeat;
+  /* background-color: burlywood; */
+	/* background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeI_G_6pJEupgBoNQrBFnt8ag67Avn-k-R4A&usqp=CAU) center center no-repeat; */
 	background-size: cover;
+  border-radius: 10%;
 }
 li{
   display: inline-block;
