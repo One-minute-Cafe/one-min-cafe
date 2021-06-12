@@ -12,7 +12,7 @@ driver.addEventListener('click',function(e){
 })
 
 
-parnter.addEventListener('click',function(){
+parnter.addEventListener('click',function(event){
     event.preventDefault();
     driver.style.display='none'
     parnterForm.style.display='block'
