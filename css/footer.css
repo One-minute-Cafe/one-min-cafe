@@ -40,6 +40,7 @@ footer div ul {
     background-color: #62767c;
     line-height: 1.3;
     font-family: Menlo, monospace;
+    margin-top: 100%;
   }
   
   @keyframes wave-animation {
