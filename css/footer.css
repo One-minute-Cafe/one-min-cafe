@@ -1,3 +1,4 @@
+
 footer div ul {
     display: inline-grid;
     grid-auto-flow: row;
@@ -36,6 +37,7 @@ footer div ul {
   footer div {
     display: flex;
     height: 100vh;
+
     width: 100%;
     background-color: #62767c;
     line-height: 1.3;
@@ -56,3 +58,5 @@ footer div ul {
     }
   }
   
+
+
