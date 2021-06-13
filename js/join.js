@@ -1,5 +1,8 @@
-let driver=document.getElementById('dr')
-let parnter=document.getElementById('pa')
+
+let driver=document.getElementById('driver')
+let parnter=document.getElementById('partner')
+
+
 let driverForm=document.getElementById('driverForm')
 let parnterForm=document.getElementById('partnerForm')
 
@@ -12,7 +15,9 @@ driver.addEventListener('click',function(e){
 })
 
 
-parnter.addEventListener('click',function(){
+
+parnter.addEventListener('click',function(event){
+
     event.preventDefault();
     driver.style.display='none'
     parnterForm.style.display='block'
@@ -28,9 +33,13 @@ function DriverForm(firstName,lastName,phone,time){
     this.firstName=firstName;
     this.lastName=lastName;
     this.phone=phone;
-    this.time=time
+
+    this.time=time;
+   
     
     DriverForm.all.push(this)
+   
+
     
 }
 
@@ -47,7 +56,7 @@ function submitFormDriver(event){
     const lastName=event.target.lastName.value
     const phone=event.target.phone.value
     const time=event.target.time.value
-    
+
     console.log(time,firstName,lastName,phone)
     new DriverForm(firstName,lastName,phone,time);
     
@@ -63,10 +72,17 @@ function submitFormDriver(event){
     
 }
 
-
 function savingLs(){
+var array = JSON.parse(localStorage.getItem('Driver') || '[]');
+array.push(DriverForm.all);
+localStorage.setItem('Driver', JSON.stringify(array));
 
-    localStorage.setItem('drivers',JSON.stringify(DriverForm.all))
+
+//  localStorage.setItem('drivers',JSON.stringify(DriverForm.all))
+
+
+
+
 }
 
 
@@ -74,13 +90,17 @@ function savingLs(){
 
 // PARTNER FORM 
 
-function PartnerForm(fname,lname,number,location,bestCofe){
+
+function PartnerForm(fname,lname,number,location,bestCofe,imageFile){
+=======
+
     this.fname=fname;
     this.lname-lname;
     this.number=number;
     this.location=location;
-    this.bestCofe=bestCofe;
-  
+
+    this.imageFile=imageFile;
+
 
     PartnerForm.all.push(this)
     
@@ -100,10 +120,24 @@ const number=event.target.number.value;
 const location=event.target.location.value;
 const bestCofe=event.target.bestCofe.value;
 
+// const imageFile=saving
 
-new PartnerForm(fname,lname,number,location,bestCofe)
 
-localStorage.setItem('partners',JSON.stringify(PartnerForm.all))
+const imageFile=localStorage.getItem('recentImage')
+console.log(imageFile);
+
+
+new PartnerForm(fname,lname,number,location,bestCofe,imageFile)
+
+
+var array = JSON.parse(localStorage.getItem('Partner') || '[]');
+array.push(PartnerForm.all);
+localStorage.setItem('Partner', JSON.stringify(array));
+localStorage.removeItem('recentImage')
+
+
+
+
 
 parnterForm.style.display='none'
 driver.style.display='block'
@@ -121,4 +155,27 @@ parnterForm.reset()
 // after submitted parnter
 
 let submitedPartner=document.getElementById('afterSubmited')
+
+
+
+
+// let saving=null;
+ document.getElementById('uploadImage').addEventListener("change",function(){
+    console.log(this.files.length)
+    const reader=new FileReader()
+    console.log(reader);
+    reader.addEventListener("load",loading)
+    function loading(){
+        localStorage.setItem('recentImage',reader.result)
+       
+       console.log(saving);
+    }
+    let arrOfImage=(this.files.length)-1
+        console.log(arrOfImage);
+    reader.readAsDataURL(this.files[arrOfImage])
+
+//    return reader.result
+    console.log(reader.result);
+})
+
 
