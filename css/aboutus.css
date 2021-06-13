@@ -1,0 +1,125 @@
+body{
+    background-color: rgb(153, 132, 115);
+    color: white;
+    position: relative;
+}
+
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+    }
+
+.navItem{
+    float: left;
+   /* top: 20px ; */
+    display: inline-block;
+    position: relative;
+    top: 30px; 
+    left: 700px;
+    margin-left: 10px;
+    width: 200px;
+}
+#pageheader{
+    position:absolute;
+   top: 80px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+}
+#logo {
+    float: left;
+    width:70px;
+    height: 50px;
+    position: relative;
+    top: 20px; 
+    left: 5px;
+}
+#paragraph{
+    margin-bottom: 20px;
+}
+#left-colomn{
+    float: right;
+    width: 500px;
+    position: absolute;
+    top: 150px;
+    left: 170px;
+}
+#right-colomn{
+    float: right;
+    width: 350px;
+    top: 100px;
+    position: absolute;
+    right: 450px;
+}
+#bioImg{
+    width: 600px;
+    height: 450px;
+}
+#header{
+    font-size: 100px;
+    font-family: 'Jost', sans-serif;
+}
+
+.card:first-child{
+    /* color: rgb(153, 132, 115);
+    background-color: white; */
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    top: 250px;
+    /* right: 11em; */
+}
+.card:nth-of-type(2n){
+    /* color: white;
+    background-color: rgb(153, 132, 115); */
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    padding-top: 4em;
+    left: 0;
+}
+#rating{
+    position: absolute;
+    top: 65em;
+}
+#rating-senc{
+    font-size: 80px;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+#team{
+   position: relative;
+   padding-top:5em;
+   padding-left: 2em;  
+}
+.card:last-child{
+    position: absolute;
+    /* color: rgb(153, 132, 115);
+    background-color: white; */
+    height: 700px;
+    width: 100%;
+    top: 90em;
+}
+.box{
+    height: 300px;
+    width: 200px;
+    display: inline-block;
+    border: black solid 2pt;
+    object-fit: cover;
+    margin-top: 2em;
+    margin-left: 5.5em;
+}
+.teambio{
+    font-size: 100px;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}`
+.wrapper{
+    position: absolute;
+    left: 2.2em;
+}

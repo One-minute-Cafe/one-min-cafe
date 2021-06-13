@@ -2,24 +2,39 @@
 <html lang="en">
 <head>
 
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">>>>>>>> main
-
+   
     <title>Document</title>
-    <link rel="stylesheet" href="../css/footer.css">
+    <!-- <link rel="stylesheet" href="../css/footer.css"> -->
 
-    <link rel="stylesheet" href="../css/header.css">
+    <!-- <link rel="stylesheet" href="../css/header.css"> -->
     <link rel="stylesheet" href="../css/reset.css">
-
     <link rel="stylesheet" href="../css/join.css">
-
-
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jost:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+        
+    <section class="hero">
+        <header id="header">
+          <a id="logo" href="#">logo</a>
+          <nav>
+            <!-- <a id="menu-icon">&#8801;</a> -->
+            <li><a href="../index.html">Home</a></li>
+           <li><a href="cafes.html">Cafes</a></li>
+           <li><a href="joinUs.html">Join Us</a></li>
+           <li><a href="aboutus.html">About Us</a></li>
+          </nav>
+        </header>
+        <header class="hero-header">
+            
+          <!-- <h1 class="hero-title">In One Minute Cofe</h1> -->
+        </header>
+        
+      </section>
+     
+    
+    <!-- <header>
+
         <nav>
            <img id ="logo" src="img/Untitled-3.png">
            <li><a href="">Home</a></li>
@@ -28,57 +43,97 @@
            <li><a href="">About Us</a></li>
            
         </nav>
-    </header>
+
+    </header> -->
     <main>
 
+        <div class="cards-list">
+  
+            <div class="card 1" id="partner" >
+              <div class="card_image"> <img src="../img/partner.jpg" /> </div>
+              <div class="card_title title-white" >
+                <p>partner</p>
+              </div>
+            </div>
+            
+              <div class="card 2" id="driver">
+              <div class="card_image">
+                <img src="../img/driver.png" />
+                </div>
+              <div class="card_title title-white" >
+                <p>Driver</p>
+              </div>
+            </div>
 
-        <div id="driver"><a href="" id="dr">Driver</a></div>
+
+        <!-- <div id="driver"><a href="" id="dr">Driver</a></div>
       
 
-        <div id="partner"> <a href="" id="pa">Cofe Partner</a></div>
-
-        <form action="" id="partnerForm" >
-            <label for="fname">First name:</label>
-            <input type="text"  name="fname" ><br><br>
-            <label for="lname">Last name:</label>
-            <input type="text"name="lname"><br><br>
-            <label for="fname">Phone:</label>
-            <input type="number" name="number"><br><br>
-            <label for="lname">Location:</label>
-            <input type="text"  name="location" ><br><br>
-            <label for="lname">Best Cofe :</label>
-            <input type="text" name="bestCofe" ><br><br>
-            <label for="file" >image :</label>
-            <!-- <input type='file'id="uploadImage" name="imageFile" multiple ><br><br>
-            <img id="imageFile" src="" alt=""> -->
-
-            <input type="submit" value="Submit">
+        <div id="partner"> <a href="" id="pa">Cofe Partner</a></div> -->
 
 
-        </form>
+        <section id="forms">
 
-        <br><br>
-
-        <form action="" id="driverForm" >
-            <label for="firstName">First name:</label>
-            <input type="text"  name="firstName" ><br><br>
-            <label for="lastName">Last name:</label>
-            <input type="text"  name="lastName" ><br><br>
-            <label for="phone">Phone:</label>
-            <input type="number" name="phone" ><br><br>
-            <label for="time">Avaliable in any time:</label>
-            <input type="text"  name="time" ><br><br>
-            <input type="submit" value="Submit">
-        </form>
-
+            
+            <form action="" id="partnerForm" >
+                <label for="fname">First name:</label>
+                <input type="text"  name="fname" ><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text"name="lname"><br><br>
+                <label for="fname">Phone:</label>
+                <input type="number" name="number" style="width: 50% ;padding: 1%;margin-left:  2%;"><br><br>
+                <label for="lname">Location:</label>
+                <input type="text"  name="location" ><br><br>
+                <label for="lname">Best Cofe :</label>
+                <input type="text" name="bestCofe" ><br><br>
+                <label for="file" >image :</label>
+                <input id="uploadImage" type="file" name="imageFile" /><br>
+                <img id="imageFile" src="" alt="">
+                <input type="submit" value="Submit">
+                
+            </form>
+            
+            <br><br>
+            <form action="" id="driverForm" >
+                <label for="firstName">First name:</label>
+                <input type="text"  name="firstName" ><br><br>
+                <label for="lastName">Last name:</label>
+                <input type="text"  name="lastName" ><br><br>
+                <label for="phone">Phone:</label>
+                <input type="number" name="phone" style="width: 50% ;padding: 1%;margin-left:  2%;"><br><br>
+                <label for="time">Avaliable in time:</label>
+                <input type="text"  name="time" ><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+            
         <section id="afterSubmited">
            
         </section>
+        <!-- <div class="left"></div>
+        <div class="right"></div> -->
     </main>
 
-    
+    <footer>
+       
+        <div>
+            <ul>
+                <li><a id="a" href="https://twitter.com/julesforrest">Twitter</a></li>
+                <li id="li"><a id="a" href="https://codepen.io/julesforrest">Codepen</a></li>
+                <li id="li"><a id="a" href="mailto:julesforrest@gmail.com">Email</a></li>
+                <li id="li"><a id="a" href="https://dribbble.com/julesforrest">Dribbble</a></li>
+                <li id="li"><a id="a" href="https://github.com/julesforrest">Github</a></li>
+                <li id="li">
+                    <p>👋</p>
+                </li>
+            </ul>
+        </div>
+     	
+       
+    </footer>
 
-    <footer id="footer1">
+    <!-- <footer id="footer1">
+
         <hr id="hr1">
         <div id="div1">
             <div id="div2">
@@ -92,8 +147,10 @@
                 <a href="https://www.instagram.com/"><img src="img/insta-icon.png" alt=""></a>
             </div>
         </div>
-    </footer>
+
+    </footer> -->
     <script src="../js/join.js"></script>
+  
 
 </body>
 </html>

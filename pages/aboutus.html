@@ -7,61 +7,74 @@
     <title>About us!</title>
     <link rel="stylesheet" href="../css/footer.css">
 
-    <link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/rating.css">
+    <!-- <link rel="stylesheet" href="../css/header.css"> -->
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/aboutus.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jost:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-           <img id ="logo" src="img/Untitled-3.png">
-           <li><a href="">Home</a></li>
-           <li><a href="">Cafes</a></li>
-           <li><a href="">Join Us</a></li>
-           <li><a href="">About Us</a></li>
-           
+        <nav id="navbar">
+           <img class="navItem" id ="logo" src="../img/logo.png">
+           <li class="navItem" id="home"><a href="">Home</a></li>
+           <li class="navItem" id="cafes"><a href="">Cafes</a></li>
+           <li class="navItem" id="joinus"><a href="">Join Us</a></li>
+           <li class="navItem" id="aboutus"><a href="">About Us</a></li>
+    
         </nav>
+    
     </header>
+   
     <main>
-        <section id="summery">
-            <h1>Who are we?
-            </h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est libero eum sunt distinctio? Deserunt vero libero officiis at fugit, modi unde, id molestiae assumenda, tempore maiores totam voluptates aliquam excepturi.
-            Nesciunt totam quia at aut fugit sit molestias ex eos tempore doloremque praesentium, ut quaerat quam ad corrupti exercitationem, rem sint animi? Dolore ea magni tenetur quo fuga, eligendi ex?</p>    
+        <section class="card"> 
+            <section id="left-colomn">
+            <h1 id="header">About us</h1> <br>
+            <p id="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est libero eum sunt distinctio? Deserunt vero libero officiis at fugit, modi unde, id molestiae assumenda, tempore maiores totam voluptates aliquam excepturi.
+                Nesciunt totam quia at aut fugit sit molestias ex eos tempore doloremque praesentium, ut quaerat quam ad corrupti exercitationem, rem sint animi? Dolore ea magni tenetur quo fuga, eligendi ex?</p>
+            </section>
+            <section id="right-colomn"> 
+                 <img id="bioImg" src="..\img\diogo-ascenso-gO5G69BiQiM-unsplash.jpg" alt="">
+            </section>
         </section>
-        <section id="rating">
-            <h1>Do you like our services? Then Rate us!</h1>
-            <div id="rating"></div>
+        
+        <section class="card" id="rating">
+            <h1 id="rating-senc">Your rate helps us to devolp our services!</h1>
+            <div class="stars" data-rating="">
+                <span class="star">&nbsp;</span>
+                <span class="star">&nbsp;</span>
+                <span class="star">&nbsp;</span>
+                <span class="star">&nbsp;</span>
+                <span class="star">&nbsp;</span>
+            </div>
         </section>
-        <section id="team">
-            <h1>Our team</h1>
-            <img id="bayan" src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis autem quam qui, numquam a commodi delectus error necessitatibus impedit porro ut. Necessitatibus, vitae nihil. Qui officiis nobis unde iste accusantium!</p>
-            <img id="omima" src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis autem quam qui, numquam a commodi delectus error necessitatibus impedit porro ut. Necessitatibus, vitae nihil. Qui officiis nobis unde iste accusantium!</p>
-            <img id="mahmoud" src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis autem quam qui, numquam a commodi delectus error necessitatibus impedit porro ut. Necessitatibus, vitae nihil. Qui officiis nobis unde iste accusantium!</p>
-            <img id="mohammed" src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis autem quam qui, numquam a commodi delectus error necessitatibus impedit porro ut. Necessitatibus, vitae nihil. Qui officiis nobis unde iste accusantium!</p>
-            <img id="yazeed" src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis autem quam qui, numquam a commodi delectus error necessitatibus impedit porro ut. Necessitatibus, vitae nihil. Qui officiis nobis unde iste accusantium!</p>
-        </section>
+        <section class="card" id="team">
+            <h1 class="teambio" >Our Team</h1>
+            <div class="wrapper">
+                <div class="box box1"><img src="" alt="a balloon"></div>
+                <div class="box box2"><img src="" alt="a balloon"></div>
+                <div class="box box3"><img src="" alt="a balloon"></div>
+                <div class="box box4"><img src="" alt="a balloon"></div>
+                <div class="box box5"><img src="" alt="a balloon"></div>
+            </div> 
+        </section> 
     </main>
+    <footer>
 
-
-    <footer id="footer1">
-        <hr id="hr1">
-        <div id="div1">
-            <div id="div2">
-                <h5>One_Min_Cafe &copy 2021 . All Rights Reserved.</h5>
-                <h5>See you soon.</h5>
-            </div>
-            <div id="div3">
-                    <a href="https://web.facebook.com/"><img src="img/fb-icon.png" alt=""></a>
-                    <a href="https://twitter.com/"><img src="img/twit-icon.png" alt=""></a>
-                    <a href="https://www.instagram.com/"><img src="img/insta-icon.png" alt=""></a>
-            </div>
+        <div>
+            <ul>
+                <li><a id="a" href="https://twitter.com/julesforrest">Twitter</a></li>
+                <li id="li"><a id="a" href="https://codepen.io/julesforrest">Codepen</a></li>
+                <li id="li"><a id="a" href="mailto:julesforrest@gmail.com">Email</a></li>
+                <li id="li"><a id="a" href="https://dribbble.com/julesforrest">Dribbble</a></li>
+                <li id="li"><a id="a" href="https://github.com/julesforrest">Github</a></li>
+                <li id="li"><p>👋</p></li>
+            </ul>
         </div>
-
+        
     </footer>
+    <script src="../js/rating.js"></script>
+
 </body>
 </html>
