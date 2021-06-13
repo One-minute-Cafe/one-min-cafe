@@ -92,7 +92,7 @@ localStorage.setItem('Driver', JSON.stringify(array));
 
 
 function PartnerForm(fname,lname,number,location,bestCofe,imageFile){
-=======
+
 
     this.fname=fname;
     this.lname-lname;
