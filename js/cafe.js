@@ -227,3 +227,6 @@ function saveData(){
 // var array = JSON.parse(localStorage.getItem('Order') || '[]');
 //     array.push(customerOrder);
 //     localStorage.setItem('Order', JSON.stringify(array));
+=======
+let partner = localStorage.getItem(JSON.parse('submit'));
+// console.log(partner);
