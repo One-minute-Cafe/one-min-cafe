@@ -175,8 +175,8 @@ form.addEventListener('submit',handleSubmit);
 function handleSubmit(event){
     customerOrder = [];
     event.preventDefault();
-    let name2 = event.target.name.value
-    console.log(name2);
+    let name = event.target.name.value
+    console.log(name);
   let checkboxes1 = document.querySelectorAll(`input[name = '${OrderForm.allOrder[0].name}']`);
   let checkboxes2 = document.querySelectorAll(`input[name = '${OrderForm.allOrder[1].name}']`);
   let checkboxes3 = document.querySelectorAll(`input[name = '${OrderForm.allOrder[2].name}']`);
