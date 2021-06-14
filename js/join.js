@@ -136,9 +136,6 @@ localStorage.setItem('Partner', JSON.stringify(array));
 localStorage.removeItem('recentImage')
 
 
-
-
-
 parnterForm.style.display='none'
 driver.style.display='block'
 let text=document.createElement('p')
