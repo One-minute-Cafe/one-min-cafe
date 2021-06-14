@@ -7,6 +7,7 @@ bestCofe.addEventListener('click',function(){
 let joinUs= document.getElementById('join')
 join.addEventListener('click',function(){
     location.href='pages/joinUs.html'
+
 })
 
 
@@ -33,3 +34,4 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 1000);
 }
+

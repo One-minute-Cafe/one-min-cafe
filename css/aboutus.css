@@ -66,8 +66,8 @@ a{
 }
 
 .card:first-child{
-    color: rgb(153, 132, 115);
-    background-color: white;
+    /* color: rgb(153, 132, 115);
+    background-color: white; */
     height: 700px;
     width: 100%;
     position: absolute;
@@ -75,8 +75,8 @@ a{
     /* right: 11em; */
 }
 .card:nth-of-type(2n){
-    color: white;
-    background-color: rgb(153, 132, 115);
+    /* color: white;
+    background-color: rgb(153, 132, 115); */
     height: 700px;
     width: 100%;
     position: absolute;
@@ -99,8 +99,8 @@ a{
 }
 .card:last-child{
     position: absolute;
-    color: rgb(153, 132, 115);
-    background-color: white;
+    /* color: rgb(153, 132, 115);
+    background-color: white; */
     height: 700px;
     width: 100%;
     top: 90em;

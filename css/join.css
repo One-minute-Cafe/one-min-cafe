@@ -1,5 +1,7 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
 /* #driver{
+
     margin-top:5% ;
     display: inline-block;
     padding-left: 30%;
@@ -9,11 +11,17 @@
 #partner{
     display: inline-block;
     border: black;
+
 } */
+
 
 #driverForm{
     display: none;
     text-align: center;
+<<<<<<< HEAD
+=======
+
+>>>>>>> staging
     /* position:flex; */
 
   
@@ -22,6 +30,10 @@
 #partnerForm{
     display:none;
     text-align: center;
+<<<<<<< HEAD
+=======
+
+>>>>>>> staging
     /* position: absolute; */
 }
 /* input{
@@ -204,7 +216,11 @@ body {
 	flex-direction: column;
 	justify-content: space-between; */
  
+<<<<<<< HEAD
 	height: 10vh;
+=======
+	height: 50vh;
+>>>>>>> staging
 	padding: 1em;
 	/* box-sizing: border-box; */
 	color: white;
@@ -332,3 +348,8 @@ background-size: cover;
 } */
 
 
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> staging
