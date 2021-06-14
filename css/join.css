@@ -18,10 +18,6 @@
 #driverForm{
     display: none;
     text-align: center;
-<<<<<<< HEAD
-=======
-
->>>>>>> staging
     /* position:flex; */
 
   
@@ -30,10 +26,6 @@
 #partnerForm{
     display:none;
     text-align: center;
-<<<<<<< HEAD
-=======
-
->>>>>>> staging
     /* position: absolute; */
 }
 /* input{
@@ -216,11 +208,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between; */
  
-<<<<<<< HEAD
 	height: 10vh;
-=======
-	height: 50vh;
->>>>>>> staging
 	padding: 1em;
 	/* box-sizing: border-box; */
 	color: white;
@@ -348,8 +336,3 @@ background-size: cover;
 } */
 
 
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> staging
