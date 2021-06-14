@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/cafe.css">
 </head>
 
 <body>
@@ -36,26 +37,53 @@
             
         </div>
 
-        <form action="" id="cafe">
-            <fieldset>
-                <legend> cafe 1 </legend>
-            <label for="itemName">Item Name1</label>
-            <select id="itemName" name="items">
-                <option value="item1">item1</option>
-                <option value="item2">item2</option>
-                <option value="item3">item3</option>
-              </select>
-              <label>a mount of suger</label>
-              
-              <input type="radio" id="nosuger" name="amountOfSuger" value="noSuger">
-              <label for="nosuger">no suger</label>
-              <input type="radio" id="middlesuger" name="amountOfSuger" value="middlesuger">
-              <label for="middlesuger">middle suger</label>
-              <input type="radio" id="moreSuger" name="amountOfSuger" value="moreSuger">
-              <label for="moreSuger">moresuger</label>
+        <form id="orderForm">
+    <fieldset>
+        <!-- <legend>Coffee Form</legend>
+        <label>First Name</label>
+        <input type="text" name="name">
 
-            </fieldset>
-        </form>
+        <label>Size:</label>
+        <select name="size">
+          <option value="6">6 oz</option>
+          <option value="12">12 oz</option>
+          <option value="16">16 oz</option>
+          <option value="20">20 oz</option>
+          <option value="32">32 oz</option>
+        </select>
+
+        <label>Milk</label>
+        <select name="milk">
+          <option value="regular"> Regular </option>
+          <option value="almond"> Almond </option>
+          <option value="coconut"> Coconut </option>
+          <option value="none"> None </option>  
+        </select>
+   
+        <label>Hot: </label>
+        <input name="isHot" type="checkbox"> -->
+
+        <label>Drink</label>
+        <select name="drinkType">
+          <option value="latte">Latte</option>
+          <option value="blackCoffee">Black Coffee</option>
+          <option value="coldBrew">Cold Brew</option>
+        </select>
+        <input type="button" disabled value="2" name='price'>
+        <button type="submit">Submit </button>
+
+      </fieldset>
+
+  </form>
+
+
+
+        <section>
+         
+            <ul id="orders">
+        
+            </ul>
+          </section>
 
 
 
@@ -74,7 +102,71 @@
             </div>
         </div>
     </footer>
-
+<script src="../js/cafe.js"></script>
 </body>
 
-</html>
+</html> 
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Coffee Shop</title>
+</head>
+<body>
+  <main>
+  <form id="orderForm">
+    <fieldset>
+        <legend>Coffee Form</legend>
+        <label>First Name</label>
+        <input type="text" name="name">
+
+        <label>Size:</label>
+        <select name="size">
+          <option value="6">6 oz</option>
+          <option value="12">12 oz</option>
+          <option value="16">16 oz</option>
+          <option value="20">20 oz</option>
+          <option value="32">32 oz</option>
+        </select>
+
+        <label>Milk</label>
+        <select name="milk">
+          <option value="regular"> Regular </option>
+          <option value="almond"> Almond </option>
+          <option value="coconut"> Coconut </option>
+          <option value="none"> None </option>  
+        </select>
+   
+        <label>Hot: </label>
+        <input name="isHot" type="checkbox">
+
+        <label>Drink</label>
+        <select name="drinkType">
+          <option value="latte">Latte</option>
+          <option value="blackCoffee">Black Coffee</option>
+          <option value="coldBrew">Cold Brew</option>
+        </select>
+        <input type="button" disabled value="2" name='price'>
+        <button type="submit">Submit </button>
+
+      </fieldset>
+
+  </form>
+
+  <section>
+    <h3> Previous Orders</h3>
+    <ul id="orders">
+
+    </ul>
+  </section>
+</main>
+  <script src="../js/cafe.js"></script>
+</body>
+</html> -->
+
+

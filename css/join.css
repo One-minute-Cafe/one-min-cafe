@@ -168,8 +168,8 @@ body {
   background-color: rgb(153, 132, 115);
 	font-family: 'PT Sans Caption',"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	font-size: 3vh;
-  /* background:url(https://i.pinimg.com/236x/4d/37/48/4d37481d86f5865e0ad96f794bbeb5f0.jpg) left repeat-y; */
-  /* ,url(https://i.pinimg.com/236x/4d/37/48/4d37481d86f5865e0ad96f794bbeb5f0.jpg) right repeat-y ; */
+  /* background:url(https://i.pinimg.com/236x/4d/37/48/4d37481d86f5865e0ad96f794bbeb5f0.jpg) left repeat-y
+   ,url(https://i.pinimg.com/236x/4d/37/48/4d37481d86f5865e0ad96f794bbeb5f0.jpg) right repeat-y ;  */
 
 }
 /* main{
@@ -204,7 +204,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between; */
  
-	height: 50vh;
+	height: 10vh;
 	padding: 1em;
 	/* box-sizing: border-box; */
 	color: white;
