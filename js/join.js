@@ -92,7 +92,8 @@ localStorage.setItem('Driver', JSON.stringify(array));
 
 
 function PartnerForm(fname,lname,number,location,bestCofe,imageFile){
-=======
+
+
 
     this.fname=fname;
     this.lname-lname;
@@ -128,6 +129,14 @@ console.log(imageFile);
 
 
 new PartnerForm(fname,lname,number,location,bestCofe,imageFile)
+
+
+var array = JSON.parse(localStorage.getItem('Partner') || '[]');
+array.push(PartnerForm.all);
+localStorage.setItem('Partner', JSON.stringify(array));
+localStorage.removeItem('recentImage')
+
+=======
 
 
 var array = JSON.parse(localStorage.getItem('Partner') || '[]');
