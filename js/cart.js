@@ -76,7 +76,6 @@ function gettingOrders(){
 
     total=parseInt(Coffee.drinks[i].price)+total
     console.log('total',total);
-
     orderLI.textContent = ` ${Coffee.drinks[i].name}   ${Coffee.drinks[i].drinkType} .... ${Coffee.drinks[i].price}`;
     orders.appendChild(orderLI);
     const remove=document.createElement('button')
