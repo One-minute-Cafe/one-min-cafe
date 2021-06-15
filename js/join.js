@@ -133,7 +133,7 @@ new PartnerForm(fname,lname,number,location,bestCofe,imageFile)
 var array = JSON.parse(localStorage.getItem('Partner') || '[]');
 array.push(PartnerForm.all);
 localStorage.setItem('Partner', JSON.stringify(array));
-localStorage.removeItem('recentImage')
+// localStorage.removeItem('recentImage')
 
 
 parnterForm.style.display='none'
@@ -176,3 +176,9 @@ let submitedPartner=document.getElementById('afterSubmited')
 })
 
 
+// document.addEventListener('DOMContentLoaded',()=>{
+//     const recentImage=localStorage.getItem('recentImage')
+//     if(recentImage){
+//         document.getElementById('img').setAttribute('src',recentImage)
+//     }
+// })

@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded',(event)=>{
+  event.preventDefault();
+  const recentImage=localStorage.getItem('recentImage')
+  if(recentImage){
+      document.getElementById('img').setAttribute('src',recentImage)
+  }
+})
 
 var slideIndex = 1;
 showSlides(slideIndex);
