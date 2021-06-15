@@ -1,46 +1,91 @@
 
 
 
-.navItem{
+/* .navItem{
    
     position: relative;
     display: inline-block;
     left: 40em;
     margin-left: 10px;
-    width: 127px;
-    top: 2em;
-}
-#pageheader{
+
+    top: 10px;
+} */
+/* #pageheader{
     position:absolute;
    top: 80px;
-}
-a{
+} */
+.nav{
     text-decoration: none;
-    font-family: 'Jost', sans-serif;
-    color: white;
+    font-family: 'Do Hyeon', sans-serif;
+    color : white;
     font-weight: 800;
     font-size: 30px;
+
 }
 #logo {
     float: left;
-    width:70px;
-    height: 50px;
+    width:120px;
+    height: 100px;
     position: relative;
-    top: 20px; 
+    /* top: 20px;  */
     left: 5px;
 }
 #name{
     float:left;
     position: relative;
-    top: 25px; 
-   right: -0.5em;
+    top: 20px; 
+   right: 0em;
     margin-left: 10px;
     text-decoration: none;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
     color: white;
     font-weight: 800;
     font-size: 40px;
     list-style: none;
 }
 
+header{
+    position: fixed;
+   z-index: 5;
+}
 
+/* li{
+    margin-left: 5%;
+} */
+#headerList{
+    margin-left: 200%;
+
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 500px;
+    align-items: left;
+
+}
+/* #cafes{
+    margin-left: 5%;
+}
+#home{
+ margin-left: 5%;   
+}
+#joinus{
+    margin-left: 5%;
+}
+#aboutus{
+    margin-left: 5%;
+} */
+.navItem{
+   
+    position: relative;
+}
+nav ul li a {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+nav ul li a:hover:last-child {
+    border-bottom: 3px solid black;
+  }
+  nav ul li {
+      padding: 1em;
+    margin-top: -60px;
+  }

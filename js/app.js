@@ -35,3 +35,7 @@ function showSlides() {
   setTimeout(showSlides, 2000);
 }
 
+function scrollTopFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

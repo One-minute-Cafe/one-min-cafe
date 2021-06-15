@@ -1,25 +1,59 @@
-*{
+.card{
+    background-color: rgb(255, 237, 163);
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0%;
+    margin-top: -1.5em;
+    color: rgb(164,156,255);
+ }
+ #left-colomn{
+
+width: 500px; 
+margin-right: 18em;
+position: relative;
+top: 11em;
+
+
+} 
+#right-colomn{
+    /* float: left; */
+    width: 400px;
+    position: relative;
+    top: 7em;
+    right: 20em;
+
+} 
+* {
     box-sizing: border-box;
+    margin: 0;
 }
+.right-img{
+    height: 550px;
+    width: 800px;
+    border-radius: 2cm;
+    box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.why {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 50pt;
+    font-weight: 400;
+}
+.marketing{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25pt;
+}
+#sleft-colomn {
+    width: 478px;
+    margin-left: 96px;
+    float: right;
+    margin-top: 7%;
+    padding-left: 68px;
+}
+    #sright-colomn{
+        width: 500px;
+        margin-left: -220px;
+        margin-top: 4%;
+    } 
 
-#bestCofe div{
-    display: inline-block;
-    padding-left: 10%;
-}
-
-#bestCofe div:last-child{
-    padding-left: 10%;
-}
-p{
-    display: inline-block;
-    
-    padding-left: 20%;
-    
-}
-
-#join{
-    text-align: center;
-}
-/* .slideshow-container{
-    margin-top: -50px;
-} */
