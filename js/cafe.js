@@ -1,4 +1,5 @@
 let form = document.createElement("form");
+form.setAttribute('id')
 let val;
 let customerOrder = [];
 let checkbox;
@@ -13,7 +14,10 @@ let check3Input;
 let check4Input;
 let orders = [];
 let extension = [];
-
+let costTotal;
+let allCost=[];
+let quentTotal;
+let cartArr =[];
 //create constractor function
 function OrderForm(name,id,path,radioextName,ext1option1,ext1option2,ext1option3,check1,check2,check3,check4,cost){
     this.name=name;
@@ -34,19 +38,16 @@ OrderForm.allOrder=[];
 new OrderForm('coffee','ord1','../img/Untitled-3.png','amount of suger','no suger','mid suger','more suger','write name','with milk','hot','cold','10');
 new OrderForm('Nescafe latte','ord2', '../img/pixel-studios-igeJJErbKIY-unsplash.jpg', 'Types', 'Latte', 'Strong', 'Mocha','More cream', 'Write name', 'hot', 'cold', '5') 
 new OrderForm('Tea','ord3', '../img/svitlana-eXw6CPGWwcg-unsplash.jpg','Amount of suger', 'No suger', 'Mid suger', 'More suger','Write name','With milk','Green Tea', 'Black Tea','5' )
-
 function orderParameter(){
-
+  // let costTotal
   for (let i = 0; i < OrderForm.allOrder.length; i++){
-    
     let div = document.getElementById(OrderForm.allOrder[i].id);
     div.appendChild(form);
     checkbox =document.createElement("input");
-    
     checkbox.setAttribute('name', OrderForm.allOrder[i].id)
-    checkbox.setAttribute('value', 'orderchecked')
+    checkbox.setAttribute('value', `orderchecked ${i}`)
     checkbox.setAttribute("type","checkbox");
-    checkbox.setAttribute("id",OrderForm.allOrder[i].id);
+    checkbox.setAttribute("id",`order${i}`);
     form.appendChild(checkbox);
     orderPic = document.createElement("label");
     orderPic.setAttribute("for",OrderForm.allOrder[i].id);
@@ -56,7 +57,6 @@ function orderParameter(){
     orderPic.appendChild(pic1);
     let name = document.createElement("label");
     name.innerHTML = OrderForm.allOrder[i].name;
-
     form.appendChild(name);
     let quentity = document.createElement('label')
     quentity.innerHTML = ' Quentity'
@@ -65,16 +65,36 @@ function orderParameter(){
     quentityInput = document.createElement('input')
     quentityInput.setAttribute('type', 'number')
     quentityInput.setAttribute('id', 'quentity')
-    quentityInput.setAttribute('name', OrderForm.allOrder[i].name)
+    quentityInput.setAttribute('name', 'nameOfQu')
     quentityInput.setAttribute('value','number')
     form.appendChild(quentityInput)
+    let price=document.createElement('button')
+    price.setAttribute('disabled',false)
+    price.textContent=`price :${OrderForm.allOrder[i].cost}`
+    price.setAttribute('id',`'totalCost${i}'`)
+    form.appendChild(price)
+    // console.log(`'totalCost${i}'`);
+    // document.getElementById('quentity').value='1'
     quentityInput.addEventListener('change', function(event){
-     val = event.target.value;
-    val*= OrderForm.allOrder[i].cost;
-     
+      // event.defaultPrevented()
+      // val = event.target.value;
+      // console.log(val);
+       quentTotal = document.querySelectorAll(`input[name = 'nameOfQu']`);
+      // console.log(quentTotal[i].value);
+      let valueQuen=quentTotal[i].value
+       costTotal =valueQuen *OrderForm.allOrder[i].cost;
+      //  console.log(costTotal);
+      price.textContent=`price :${costTotal}`
+      allCost.push(costTotal);
+      localStorage.setItem('price',JSON.stringify(costTotal))
+      // console.log(`'totalCost${i}'`);
+      // price.document.getElementById('totalCost0').value=costTotal
+      // console.log(costTotal);
+      // document.querySelectorAll('.totalOfQU').value=`'price : ${costTotal}'`
+      // price.textContent='price'
+      // price.innerHTML='price:'
+      // console.log(costTotal);
     })
-
-    console.log();
     //radio extinction
     let ext1=document.createElement("label");
     ext1.innerHTML = OrderForm.allOrder[i].radioextName;
@@ -121,7 +141,6 @@ function orderParameter(){
     check1Input.setAttribute('id', 'check1')
     check1Input.setAttribute('name', OrderForm.allOrder[i].name)
     check1Input.setAttribute('value', OrderForm.allOrder[i].check1)
-    
     check1.innerHTML = OrderForm.allOrder[i].check1
     //check2
     let check2 = document.createElement('label');
@@ -133,7 +152,6 @@ function orderParameter(){
     check2Input.setAttribute('id', 'check2')
     check2Input.setAttribute('name', OrderForm.allOrder[i].name)
     check2Input.setAttribute('value', OrderForm.allOrder[i].check2)
-    
     check2.innerHTML = OrderForm.allOrder[i].check2
     //check3
     let check3 = document.createElement('label');
@@ -141,75 +159,115 @@ function orderParameter(){
     form.appendChild(check3)
     check3Input = document.createElement('input')
     form.appendChild(check3Input)
-    check3Input.setAttribute('type', 'radio')
+    check3Input.setAttribute('type', 'checkbox')
     check3Input.setAttribute('id', 'check3')
     check3Input.setAttribute('name', OrderForm.allOrder[i].name)
     check3Input.setAttribute('value', OrderForm.allOrder[i].check3)
-   
     check3.innerHTML = OrderForm.allOrder[i].check3
-     //check4
+    //check4
     let check4 = document.createElement('label');
     check4.setAttribute('for','check4')
     form.appendChild(check4)
-   check4Input = document.createElement('input')
+    check4Input = document.createElement('input')
     form.appendChild(check4Input)
-    check4Input.setAttribute('type', 'radio')
+    check4Input.setAttribute('type', 'checkbox')
     check4Input.setAttribute('id', 'check4')
     check4Input.setAttribute('name', OrderForm.allOrder[i].name)
     check4Input.setAttribute('value', OrderForm.allOrder[i].check4)
     check4.innerHTML = OrderForm.allOrder[i].check4;
-
     let submit = document.createElement('input')
     submit.setAttribute('type', 'submit')
     submit.setAttribute('value', 'submit')
+    submit.setAttribute('id',`button${i}`)
     form.appendChild(submit)
     let brk = document.createElement('br');
     form.appendChild(brk)
-}
-
+  }
 }
 orderParameter();
-let arr = ['ord1','ord2', 'odr3'];
 form.addEventListener('submit',handleSubmit);
-
 function handleSubmit(event){
-    customerOrder = [];
-    event.preventDefault();
-    let name = event.target.name.value
-    console.log(name);
+  customerOrder = [];
+  cartArr=[];
+  event.preventDefault();
+  //  console.log(OrderForm.allOrder[i].name);
+  // let name = event.target.name.value
+  // console.log(name);
+  // console.log(event);
+  // let aray =[{ord1:},'ord2','ord3']
+  // aray[0]=
+  console.log(quentTotal = document.querySelectorAll(`input[name = 'nameOfQu']`));
+  console.log(quentTotal[1].value * OrderForm.allOrder[1].cost);
   let checkboxes1 = document.querySelectorAll(`input[name = '${OrderForm.allOrder[0].name}']`);
   let checkboxes2 = document.querySelectorAll(`input[name = '${OrderForm.allOrder[1].name}']`);
   let checkboxes3 = document.querySelectorAll(`input[name = '${OrderForm.allOrder[2].name}']`);
-  console.log(checkboxes1[0]);
+  console.log(checkboxes1);
+  console.log(event);
+  console.log(event.target.quentity.value);
+  // console.log(pics.length);
+  // let pics=null
   for (let i = 0; i < 3; i++) { 
- let pics = document.querySelectorAll(`input[name = '${OrderForm.allOrder[i].id}']`);
-    console.log(pics[0].checked);
-    if (pics[0].checked){
-        for ( let j = 0; j < checkboxes1.length; j++){
-                    if (checkboxes1[j].checked){
-                        customerOrder.push(checkboxes1[j].value)
-                        console.log(customerOrder);
+    orders.push(document.getElementById(`order${i}`));
+    console.log(orders[i].checked);
+  }
+    // let pics = document.querySelectorAll(`input[name = '${OrderForm.allOrder[0].id}']`);
+    // console.log('hi');
+    //  console.log(pics);
+    // console.log(pics[0].checked);
+    // if (pics[0].checked){
+      // console.log(OrderForm.allOrder[i].name);
+      // customerOrder.push(OrderForm.allOrder[i].name)
+    //   for (let i=0 ; i<orders.length;i++){
+    //  console.log(orders[i].checked);
+            if(orders[0].checked){
+              customerOrder.push(OrderForm.allOrder[0].name);
+              cartArr.push(OrderForm.allOrder[0].name);
+              cartArr.push(quentTotal[0].value * OrderForm.allOrder[0].cost);
+      for ( let j = 0; j < checkboxes1.length; j++){
+        // console.log(checkboxes1[j].checked);
+        if (checkboxes1[j].checked){
+          customerOrder.push(checkboxes1[j].value)
+          // console.log(customerOrder);
+        }
                     }
-                  }
-    }
-}
-
-   
-  
-   
-
-
-  saveData();
-}
-  
-
-
+                    customerOrder.push(quentTotal[0].value * OrderForm.allOrder[0].cost);
+                   }
+                    if(orders[1].checked){
+                      customerOrder.push(OrderForm.allOrder[1].name);
+                      cartArr.push(OrderForm.allOrder[1].name);
+                      cartArr.push(quentTotal[1].value * OrderForm.allOrder[1].cost);
+                    for ( let j = 0; j < checkboxes1.length; j++){
+                    if (checkboxes2[j].checked){
+                      customerOrder.push(checkboxes2[j].value)
+                        // console.log(customerOrder);
+                      } }
+                      customerOrder.push(quentTotal[1].value * OrderForm.allOrder[1].cost);
+                    }
+                      if(orders[2].checked){
+                        customerOrder.push(OrderForm.allOrder[2].name);
+                        cartArr.push(OrderForm.allOrder[2].name);
+                        cartArr.push(quentTotal[2].value * OrderForm.allOrder[2].cost);
+                      for ( let j = 0; j < checkboxes1.length; j++){
+                      if(checkboxes3[j].checked){
+                      customerOrder.push(checkboxes3[j].value)
+                        // console.log(customerOrder);
+                  }}
+                  customerOrder.push(quentTotal[2].value * OrderForm.allOrder[2].cost);
+                }
+                console.log(customerOrder);
+                console.log(cartArr);
+                saveData();
+              }
+                // }
+  // let  names=OrderForm.all[i].name
 function saveData(){
-    let orderData = JSON.stringify(customerOrder)
+    let customerOrderData = JSON.stringify(customerOrder);
+    let goTocartData = JSON.stringify(cartArr);
+    localStorage.setItem('customerOrder',customerOrderData);
+    localStorage.setItem('goToCart',goTocartData);
     // console.log(localStorage.setItem('Order', orderData));
 }
-
 // var array = JSON.parse(localStorage.getItem('Order') || '[]');
 //     array.push(customerOrder);
 //     localStorage.setItem('Order', JSON.stringify(array));
-// 
+//

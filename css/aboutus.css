@@ -1,7 +1,7 @@
 body{
     background-color: rgb(153, 132, 115);
     color: white;
-    position: relative;
+    /* position: relative; */
 }
 
 *{
@@ -10,15 +10,14 @@ body{
     box-sizing: border-box;
     }
 
-.navItem{
+/* .navItem{
     float: left;
-   /* top: 20px ; */
-    display: inline-block;
+
     position: relative;
-    top: 30px; 
+    top: -70px; 
     left: 700px;
     margin-left: 10px;
-    width: 200px;
+    width: 127px;
 }
 #pageheader{
     position:absolute;
@@ -38,7 +37,7 @@ a{
     position: relative;
     top: 20px; 
     left: 5px;
-}
+} */
 #paragraph{
     margin-bottom: 20px;
 }
