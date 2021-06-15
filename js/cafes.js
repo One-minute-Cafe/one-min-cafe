@@ -27,4 +27,4 @@ let form = document.createElement("form");
      // Create an input element for emailID
      var EID = document.createElement("input");
      EID.setAttribute("type", "text");
-     EID.setAttribute("name",
+    //  EID.set

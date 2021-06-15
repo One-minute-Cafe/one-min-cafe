@@ -1,4 +1,129 @@
+/* css for model cart  */
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 70%; /* Full width */
+  height: 70%; /* Full height */
+  /* overflow: auto; Enable scroll if needed */
+  /* background-color: rgb(0,0,0); Fallback color */
+  /* background-color: rgba(247, 242, 242, 0.4); Black w/ opacity */
+  padding-left: 10%;
+} 
+ 
+ 
+ /* Modal Content */
+ .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(248, 239, 239);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #dbf1db;
+  color: rgb(19, 16, 16);
+}
+
+/* .modal-body {padding: 2px 16px;} */
+
+/* .modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+} */
+
+ul {
+   padding: 20px; 
+  list-style-type: circle;
+  border: 2px solid rgb(152, 152, 156);
+  background-color: rgb(188, 200, 204);
+}
+li {
+    padding: 10px;
+  margin: 5px;
+  background-color: lightyellow;
+  display: block;
+  padding-left: 10%;
+}
+#buttRemove{
+    padding-left: 20px;
+    margin-left: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 body {
   font-family: Arial;
   margin: 0;
@@ -10,25 +135,25 @@ body {
 
 img {
   vertical-align: middle;
-}
+} */
 
 /* Position the image container (needed to position the left and right arrows) */
-.container {
+/* .container {
   position: relative;
-}
+} */
 
 /* Hide the images by default */
-.mySlides {
+/* .mySlides {
   display: none;
-}
+} */
 
 /* Add a pointer when hovering over the thumbnail images */
-.cursor {
+/* .cursor {
   cursor: pointer;
-}
+} */
 
 /* Next & previous buttons */
-.prev,
+/* .prev,
 .next {
   cursor: pointer;
   position: absolute;
@@ -42,31 +167,31 @@ img {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
-}
+} */
 
 /* Position the "next button" to the right */
-.next {
+/* .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
+} */
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+/* .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 /* Number text (1/3 etc) */
-.numbertext {
+/* .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
+} */
 
 /* Container for image text */
-.caption-container {
+/* .caption-container {
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
@@ -77,20 +202,20 @@ img {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 /* Six columns side by side */
-.column {
+/* .column {
   float: left;
   width: 16.66%;
-}
+} */
 
 /* Add a transparency effect for thumnbail images */
-.demo {
+/* .demo {
   opacity: 0.6;
 }
 
 .active,
 .demo:hover {
   opacity: 1;
-}
+} */
