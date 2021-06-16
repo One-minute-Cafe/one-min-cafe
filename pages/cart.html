@@ -2,116 +2,134 @@
 <html>
 <head>
   <title>Coffee Shop</title>
+  <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer2.css">
 </head>
-<body>
-  <main>
-    <header>
-      <button id="myBtn">Add To Cart <span id="span" ></span></button>
-    </header>
-
-
-    <section>
-      <img src="../img/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg" alt="" style="width: 200px;height: 200px;" id="img-click">
-    </section>
-  <form id="orderForm">
-    <fieldset>
-      <div >
-        <legend>Coffee Form</legend>
-        <img src="../img/Untitled-3.gif" alt="">
-        <input type="checkbox" name="check1">
-        <input type="button" name="name" id="idee" value="latte" disabled>
-
-        <label>Size:</label>
-        <select name="size" id="sizeOr1">
-          <option value="6">6 oz</option>
-          <option value="12">12 oz</option>
-          <option value="16">16 oz</option>
-          <option value="20">20 oz</option>
-          <option value="32">32 oz</option>
-        </select>
-
-        <label>Milk</label>
-        <select name="milk" id="milkOr1">
-          <option value="regular"> Regular </option>
-          <option value="almond"> Almond </option>
-          <option value="coconut"> Coconut </option>
-          <option value="none"> None </option>  
-        </select>
-        <input type="number" name='quantity' id="quantityOrder1" value="1">
-        <label>Price</label>
-        <input type="button" name='price' disabled value="2" id="priceOr1">
-      </div>
-
-        <!-- form 2 -->
-        <div>
-
-          <img src="../img/Untitled-3.gif" alt="">
-         <input type="checkbox" name="check2">
-       <input type="button" name="name" id="id2" value="blackCoffee" disabled>
-
-        <label>Size:</label>
-        <select name="size" id="sizeOr2">
-          <option value="6">6 oz</option>
-          <option value="12">12 oz</option>
-          <option value="16">16 oz</option>
-          <option value="20">20 oz</option>
-          <option value="32">32 oz</option>
-        </select>
-
-        <label>Milk</label>
-        <select name="milk" id="milkor2">
-          <option value="regular"> Regular </option>
-          <option value="almond"> Almond </option>
-          <option value="coconut"> Coconut </option>
-          <option value="none"> None </option>  
-        </select>
-        <input type="number" name='quantity' id="quantityOrder2">
-        <label>Price</label>
-        <input type="button" name='price' disabled value="2" id="priceOr2">
-      </div>
-
-        <!-- form 3 -->
-        <div>
-
-
-          <img src="../img/Untitled-3.gif" alt="">
-          <input type="checkbox" name="check3" >
-        <input type="button" name="name" id="id3" value="coldBrew" disabled>
-        <label>Size:</label>
-        <select name="size" id="sizeOr3">
-          <option value="6">6 oz</option>
-          <option value="12">12 oz</option>
-          <option value="16">16 oz</option>
-          <option value="20">20 oz</option>
-          <option value="32">32 oz</option>
-        </select>
-
-        <label>Milk</label>
-        <select name="milk" id="milkor3">
-          <option value="regular"> Regular </option>
-          <option value="almond"> Almond </option>
-          <option value="coconut"> Coconut </option>
-          <option value="none"> None </option>  
-        </select>
-   
-        <input type="number" name='quantity' id="quantityOrder3">
+<body >
+  
+                
+    <header id="header">
+      <nav id="navbar">
+         <div class="left-part">
+          <img class="navItem" id ="logo" src="..\img\3.png">
+         <h4 id="name">One Minute Cafe<h4></div>
+         <ul id="headerList">
+          <li class="navItem" id="home"><a class="nav" href="">Home</a></li>
+          <li class="navItem" id="cafes"><a class="nav" href="">Cafes</a></li>
+          <li class="navItem" id="joinus"><a class="nav" href="">Join Us</a></li>
+          <li class="navItem" id="aboutus"><a class="nav" href="">About Us</a></li>
+        </ul>
         
-        <label>Price</label>
+      </nav>
+      
+      <button id="myBtn">Add To Cart <span id="span" ></span></button>
+  </header> 
+
+  <main>
+    <div id="cardhead">
+      <img src="" alt="">
+      <h1></h1>
+    </div> 
+       <section>
+      <!-- <img src="../img/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg" alt=""  id="img-click"> -->
+    </section >
+    <section id="display-form">
+
+      <form id="orderForm">
+        <fieldset>
+          <div  class='div-form'>
+            
+            <img src="../img/2102020-Caffe-Latte-113920 (1).jpg" alt="" class="pic-form">
+            <input type="checkbox" name="check1"class="check-name">
+            <input type="button" name="name" id="idee" value="latte" disabled>
+            
+            <label>Size:</label>
+            <select name="size" id="sizeOr1">
+              <option value="6">6 oz</option>
+              <option value="12">12 oz</option>
+              <option value="16">16 oz</option>
+              <option value="20">20 oz</option>
+              <option value="32">32 oz</option>
+            </select>
+            
+            <label>Milk</label>
+            <select name="milk" id="milkOr1">
+              <option value="regular"> Regular </option>
+              <option value="almond"> Almond </option>
+              <option value="coconut"> Coconut </option>
+              <option value="none"> None </option>  
+            </select>
+            <input type="number" name='quantity' id="quantityOrder1" value="1">
+            <label>Price</label>
+            <input type="button" name='price' disabled value="2" id="priceOr1">
+          </div>
+          
+          <!-- form 2 -->
+          <div class='div-form'>
+
+            <img src="../img/side-view-coffee-white-cup-with-coffee-beans-isolated-white-wooden-background.jpg" alt="" class="pic-form">
+            <input type="checkbox" name="check2"class="check-name">
+            <input type="button" name="name" id="id2" value="blackCoffee" disabled>
+            
+            <label>Size:</label>
+            <select name="size" id="sizeOr2">
+              <option value="6">6 oz</option>
+              <option value="12">12 oz</option>
+              <option value="16">16 oz</option>
+              <option value="20">20 oz</option>
+              <option value="32">32 oz</option>
+            </select>
+            
+            <label>Milk</label>
+            <select name="milk" id="milkOr2">
+              <option value="regular"> Regular </option>
+              <option value="almond"> Almond </option>
+              <option value="coconut"> Coconut </option>
+              <option value="none"> None </option>  
+            </select>
+            <input type="number" name='quantity' id="quantityOrder2">
+            <label>Price</label>
+            <input type="button" name='price' disabled value="2" id="priceOr2">
+          </div>
+          
+          <!-- form 3 -->
+          <div class='div-form'>
+            
+            
+            <img src="../img/cappuccino-2029-e80b7c6d318c7862df2c4c8623a11f991x.jpg" alt="" class="pic-form">
+            <input type="checkbox" name="check3" class="check-name">
+            <input type="button" name="name" id="id3" value="cappuccino" disabled>
+            <label>Size:</label>
+            <select name="size" id="sizeOr3">
+              <option value="6">6 oz</option>
+              <option value="12">12 oz</option>
+              <option value="16">16 oz</option>
+              <option value="20">20 oz</option>
+              <option value="32">32 oz</option>
+            </select>
+            
+            <label>Milk</label>
+            <select name="milk" id="milkor3">
+              <option value="regular"> Regular </option>
+              <option value="almond"> Almond </option>
+              <option value="coconut"> Coconut </option>
+              <option value="none"> None </option>  
+            </select>
+            
+            <input type="number" name='quantity' id="quantityOrder3">
+            
+            <label>Price</label>
         <input type="button" name='price' disabled value="2" id="priceOr3">
       </div>
-        <button type="submit">Submit </button>
-
-      </fieldset>
-
+      <button type="submit" id="submit-butt">Submit </button>
+      
+    </fieldset>
+    
   </form>
-
-  <!-- <section>
-    <h3> Previous Orders</h3>
-    <ul id="orders">
-
-    </ul>
-  </section> -->
+</section>
+  
 
   <div id="myModal" class="modal">
     <!-- Modal content -->
@@ -138,6 +156,27 @@
 </div>
 <!-- End model content -->
 </main>
+
+
+<footer>
+  <section id="socialmediabuttons">
+    <h2 id="h2dena">Contact Us :</h2>
+    <ul class="social">
+      <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+      <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+      <li><i class="fa fa-github" aria-hidden="true"></i></li>
+      <li><i class="fa fa-snapchat" aria-hidden="true"></i></li>
+      <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+      <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+    </ul>
+  </section>
+  <section>
+    <p id="copyright">One Minute © 2021</p>
+  </section>
+  <button onclick="scrollTopFunction()" id="myBtnToTop" title="Go to top">
+    <i class="fas fa-arrow-alt-circle-up"></i>
+  </button>
+</footer>
   <script src="../js/home.js"></script>
   <script src="../js/cart.js"></script>
   <script>

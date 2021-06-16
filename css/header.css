@@ -1,27 +1,91 @@
-*{
-    box-sizing: border-box;
-}
-header{
 
+
+
+/* .navItem{
+   
     position: relative;
-   background-color: #492922;
-    top: 20px;
-}
-li{
-display: inline;
+    display: inline-block;
+    left: 40em;
+    margin-left: 10px;
 
-}
-
-
-
-
-a{
+    top: 10px;
+} */
+/* #pageheader{
+    position:absolute;
+   top: 80px;
+} */
+.nav{
     text-decoration: none;
-    color :#e56f05;
-}
-#logo{
-
-    height: 80px;
-    width: 80px;
+    font-family: 'Do Hyeon', sans-serif;
+    color : white;
+    font-weight: 800;
+    font-size: 30px;
 
 }
+#logo {
+    float: left;
+    width:120px;
+    height: 100px;
+    position: relative;
+    /* top: 20px;  */
+    left: 5px;
+}
+#name{
+    float:left;
+    position: relative;
+    top: 20px; 
+   right: 0em;
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+    list-style: none;
+}
+
+header{
+    position: fixed;
+   z-index: 5;
+}
+
+/* li{
+    margin-left: 5%;
+} */
+#headerList{
+    margin-left: 200%;
+
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 500px;
+    align-items: left;
+
+}
+/* #cafes{
+    margin-left: 5%;
+}
+#home{
+ margin-left: 5%;   
+}
+#joinus{
+    margin-left: 5%;
+}
+#aboutus{
+    margin-left: 5%;
+} */
+.navItem{
+   
+    position: relative;
+}
+nav ul li a {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+nav ul li a:hover:last-child {
+    border-bottom: 3px solid black;
+  }
+  nav ul li {
+      padding: 1em;
+    margin-top: -60px;
+  }

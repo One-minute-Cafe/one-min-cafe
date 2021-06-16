@@ -1,7 +1,12 @@
+
+body{
+  background-color:rgb(255, 237, 163);
+}
+
 /* css for model cart  */
 
 /* The Modal (background) */
-.modal {
+ .modal { 
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -72,34 +77,66 @@
   color: white;
 } */
 
-ul {
+.modal-body ul {
    padding: 20px; 
   list-style-type: circle;
   border: 2px solid rgb(152, 152, 156);
   background-color: rgb(188, 200, 204);
 }
-li {
+/* li {
     padding: 10px;
   margin: 5px;
   background-color: lightyellow;
   display: block;
   padding-left: 10%;
-}
+}  */
 #buttRemove{
     padding-left: 20px;
     margin-left: 90%;
 }
 
 
+main{
+  position: relative;
+}
+
+#display-form{
+  width:52%;
+  height: 10%;
+  padding-left: 25% ;
+ padding-top: 25%; 
+ /* background-color: rgb(164, 156, 255) */
+ padding-bottom: 5%;
+
+} 
 
 
+.pic-form{
+  height:150px;
+  width: 200px;
+}
 
+.div-form{
+ margin: 10px;
+ /* border:10px soild whitesmoke; */
+ background-color: white;
+ position: relative;
+ 
+}
 
+#submit-butt{
+  width: 100%;
+  background-color: white;
 
+}
 
+.check-name{
+  position: absolute;
+  top:0px;
+  left:0px;
+  padding: 5px;
 
-
-
+}
 
 
 
