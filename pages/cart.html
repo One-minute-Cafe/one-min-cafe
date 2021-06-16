@@ -1,191 +1,211 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-ul {
-   padding: 20px; 
-  list-style-type: circle;
-  border: 2px solid blue;
-  background-color: lightblue;
-}
-li {
-    padding: 10px;
-  margin: 5px;
-  background-color: lightyellow;
-}
-#buttRemove{
-    padding-left: 20px;
-    margin-left: 90%;
-}
-li{
-    display: block;
-   
-    padding-left: 10%;
-}
-</style>
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer2.css">
 </head>
-<body>
-
-    <header>
-       
-
-
-<button id="myBtn">Add To Cart <span id="span" >(0)</span></button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Modal Header</h2>
-    </div>
-    <div class="modal-body">
-        <section>
-         
-            <ul id="orders">
+<body >
+  
+                
+    <header id="header">
+      <nav id="navbar">
+         <div class="left-part">
+          <img class="navItem" id ="logo" src="..\img\3.png">
+         <h4 id="name">One Minute Cafe<h4></div>
+         <ul id="headerList">
+          <li class="navItem" id="home"><a class="nav" href="">Home</a></li>
+          <li class="navItem" id="cafes"><a class="nav" href="">Cafes</a></li>
+          <li class="navItem" id="joinus"><a class="nav" href="">Join Us</a></li>
+          <li class="navItem" id="aboutus"><a class="nav" href="">About Us</a></li>
+        </ul>
         
-            </ul>
-          </section>
-          <input type="button" disabled id="total"  style="padding: 10px;width: 70px;">
+      </nav>
+      
+      <button id="myBtn">Add To Cart <span id="span" ></span></button>
+  </header> 
 
-    </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
-    </div>
-  </div>
+  <main>
+    <div id="cardhead">
+      <img src="" alt="">
+      <h1></h1>
+    </div> 
+       <section>
+      <!-- <img src="../img/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg" alt=""  id="img-click"> -->
+    </section >
+    <section id="display-form">
 
-</div>
-    </header>
-    <main>
-        <div id="form">
+      <form id="orderForm">
+        <fieldset>
+          <div  class='div-form'>
             
-        </div>
+            <img src="../img/2102020-Caffe-Latte-113920 (1).jpg" alt="" class="pic-form">
+            <input type="checkbox" name="check1"class="check-name">
+            <input type="button" name="name" id="idee" value="latte" disabled>
+            
+            <label>Size:</label>
+            <select name="size" id="sizeOr1">
+              <option value="6">6 oz</option>
+              <option value="12">12 oz</option>
+              <option value="16">16 oz</option>
+              <option value="20">20 oz</option>
+              <option value="32">32 oz</option>
+            </select>
+            
+            <label>Milk</label>
+            <select name="milk" id="milkOr1">
+              <option value="regular"> Regular </option>
+              <option value="almond"> Almond </option>
+              <option value="coconut"> Coconut </option>
+              <option value="none"> None </option>  
+            </select>
+            <input type="number" name='quantity' id="quantityOrder1" value="1">
+            <label>Price</label>
+            <input type="button" name='price' disabled value="2" id="priceOr1">
+          </div>
+          
+          <!-- form 2 -->
+          <div class='div-form'>
 
-        <form id="orderForm">
-    <fieldset>
-     
-        <input type="text" name="name">
-        <label>Drink</label>
-        <select name="drinkType">
-          <option value="latte">Latte</option>
-          <option value="blackCoffee">Black Coffee</option>
-          <option value="coldBrew">Cold Brew</option>
-        </select>
-
-        <input type="button" disabled value="2" name='price'>
-        <button type="submit">Submit </button>
-
-      </fieldset>
-
+            <img src="../img/side-view-coffee-white-cup-with-coffee-beans-isolated-white-wooden-background.jpg" alt="" class="pic-form">
+            <input type="checkbox" name="check2"class="check-name">
+            <input type="button" name="name" id="id2" value="blackCoffee" disabled>
+            
+            <label>Size:</label>
+            <select name="size" id="sizeOr2">
+              <option value="6">6 oz</option>
+              <option value="12">12 oz</option>
+              <option value="16">16 oz</option>
+              <option value="20">20 oz</option>
+              <option value="32">32 oz</option>
+            </select>
+            
+            <label>Milk</label>
+            <select name="milk" id="milkOr2">
+              <option value="regular"> Regular </option>
+              <option value="almond"> Almond </option>
+              <option value="coconut"> Coconut </option>
+              <option value="none"> None </option>  
+            </select>
+            <input type="number" name='quantity' id="quantityOrder2">
+            <label>Price</label>
+            <input type="button" name='price' disabled value="2" id="priceOr2">
+          </div>
+          
+          <!-- form 3 -->
+          <div class='div-form'>
+            
+            
+            <img src="../img/cappuccino-2029-e80b7c6d318c7862df2c4c8623a11f991x.jpg" alt="" class="pic-form">
+            <input type="checkbox" name="check3" class="check-name">
+            <input type="button" name="name" id="id3" value="cappuccino" disabled>
+            <label>Size:</label>
+            <select name="size" id="sizeOr3">
+              <option value="6">6 oz</option>
+              <option value="12">12 oz</option>
+              <option value="16">16 oz</option>
+              <option value="20">20 oz</option>
+              <option value="32">32 oz</option>
+            </select>
+            
+            <label>Milk</label>
+            <select name="milk" id="milkor3">
+              <option value="regular"> Regular </option>
+              <option value="almond"> Almond </option>
+              <option value="coconut"> Coconut </option>
+              <option value="none"> None </option>  
+            </select>
+            
+            <input type="number" name='quantity' id="quantityOrder3">
+            
+            <label>Price</label>
+        <input type="button" name='price' disabled value="2" id="priceOr3">
+      </div>
+      <button type="submit" id="submit-butt">Submit </button>
+      
+    </fieldset>
+    
   </form>
+</section>
+  
 
-    </main>
-    <footer></footer>
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Cart</h2>
+      </div>
+      <div class="modal-body">
+          <section>
+           
+              <ul id="orders">
+          
+              </ul>
+            </section>
+            <input type="button" disabled id="total"  style="padding: 10px;width: 70px;">
+  
+      </div>
+      <!-- <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div> -->
+    </div>
+    
+</div>
+<!-- End model content -->
+</main>
 
-    <script src="../js/cart.js"></script>
 
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
+<footer>
+  <section id="socialmediabuttons">
+    <h2 id="h2dena">Contact Us :</h2>
+    <ul class="social">
+      <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+      <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+      <li><i class="fa fa-github" aria-hidden="true"></i></li>
+      <li><i class="fa fa-snapchat" aria-hidden="true"></i></li>
+      <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+      <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+    </ul>
+  </section>
+  <section>
+    <p id="copyright">One Minute © 2021</p>
+  </section>
+  <button onclick="scrollTopFunction()" id="myBtnToTop" title="Go to top">
+    <i class="fas fa-arrow-alt-circle-up"></i>
+  </button>
+</footer>
+  <script src="../js/home.js"></script>
+  <script src="../js/cart.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    // console.log(event.target);
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
 </body>
 </html>
