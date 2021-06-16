@@ -292,7 +292,9 @@ main{
   z-index: -1;
 }
 
-
+footer{
+  clear: both;
+}
 
 
 
