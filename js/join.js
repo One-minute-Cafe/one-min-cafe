@@ -13,7 +13,8 @@ driver.addEventListener('click',function(e){
     e.preventDefault();
     parnter.style.display='none'
     driverForm.style.display='block'
-    footer.style.marginTop='20%'
+    // footer.style.marginTop='10%'
+
 })
 
 
@@ -23,7 +24,7 @@ parnter.addEventListener('click',function(event){
     event.preventDefault();
     driver.style.display='none'
     parnterForm.style.display='block'
-    footer.style.marginTop='20%'
+    // footer.style.marginTop='10%'
 
 })
 
