@@ -5,6 +5,7 @@ let parnter=document.getElementById('partner')
 
 let driverForm=document.getElementById('driverForm')
 let parnterForm=document.getElementById('partnerForm')
+let footer=document.getElementById('socialmediabuttons')
 
 
 
@@ -12,6 +13,7 @@ driver.addEventListener('click',function(e){
     e.preventDefault();
     parnter.style.display='none'
     driverForm.style.display='block'
+    footer.style.marginTop='20%'
 })
 
 
@@ -21,6 +23,8 @@ parnter.addEventListener('click',function(event){
     event.preventDefault();
     driver.style.display='none'
     parnterForm.style.display='block'
+    footer.style.marginTop='20%'
+
 })
 
 
