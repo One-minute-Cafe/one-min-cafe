@@ -18,7 +18,7 @@
       font-weight: 900;
       right: 9.5em;
       position: absolute;
-      top: 3.5em;
+      top: 17em;
   }
   .star.rated{
       counter-increment: rateme 1;
