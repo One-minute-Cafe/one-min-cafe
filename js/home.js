@@ -10,11 +10,12 @@
 // const orderForm = document.getElementById('orderForm');
 // const orders = document.getElementById('orders');
 let disaplyForm=document.getElementById('display-form')
-// let imageMain=document.getElementById('img-click')
-// imageMain.addEventListener('click',()=>{
-//   console.log('hi');
-//   disaplyForm.style.display='block'
-// })
+let imageMain=document.getElementById('img-click')
+imageMain.addEventListener('click',()=>{
+  console.log('hi');
+  disaplyForm.style.display='block'
+  imageMain.style.display='none'
+})
 function Coffee(check1,name, size, milk,quantity,price){
   this.check1=check1;
   this.name = name;
@@ -76,6 +77,7 @@ function handleSubmit(event){
 // new Coffee(newEshi,name, size, milk, isHot, dType,price);
   // renderOrders();
   orderForm.style.display='none'
+  imageMain.style.display='block'
 }
 function savingToLs(){
   let convertedArr = JSON.stringify(Coffee.drinks); 

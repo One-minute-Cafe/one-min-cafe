@@ -51,7 +51,7 @@ function render() {
         orders.appendChild(orderLI);
         const remove = document.createElement('button')
         remove.setAttribute('id', 'buttRemove')
-        remove.textContent = 'delete'
+        remove.textContent = 'Delete'
         orderLI.appendChild(remove)
             // console.log(Coffee.drinks[i].drinkType);
         remove.addEventListener('click', function(orderLI) {
