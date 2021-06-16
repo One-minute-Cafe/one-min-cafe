@@ -1,129 +1,87 @@
 body{
-    background-color: rgb(153, 132, 115);
-    color: white;
-    /* position: relative; */
+    background-color: rgb(255, 237, 163);
+    color: rgb(164,156,255);
+   
 }
 
 *{
-    padding: 0; 
-    margin: 0; 
     box-sizing: border-box;
     }
 
-/* .navItem{
-    float: left;
+    #left-colomn{
 
-    position: relative;
-    top: -70px; 
-    left: 700px;
-    margin-left: 10px;
-    width: 127px;
+        width: 500px; 
+        margin-right: 18em;
+        position: relative;
+        top: 17.5em;
+        
+        
+        } 
+        #right-colomn{
+            /* float: left; */
+            width: 400px;
+            position: relative;
+            top: 12em;
+            right: 20em;
+        
+        } 
+        .card{
+            background-color: rgb(255, 237, 163);
+            height: 1000px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0%;
+            margin-top: 0.5em;
+            color: rgb(164,156,255);
+         }
+         #bioImg{
+            height: 550px;
+            width: 800px;
+            border-radius: 2cm;
+            box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         }
+       
+#smalltitle{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 50pt;
+    font-weight: 400;
 }
-#pageheader{
-    position:absolute;
-   top: 80px;
-}
-a{
-    text-decoration: none;
-    font-family: 'Jost', sans-serif;
-    color: white;
-    font-weight: 800;
-    font-size: 30px;
-}
-#logo {
-    float: left;
-    width:70px;
-    height: 50px;
-    position: relative;
-    top: 20px; 
-    left: 5px;
-} */
-#paragraph{
-    margin-bottom: 20px;
-}
-#left-colomn{
-    float: right;
-    width: 500px;
-    position: absolute;
-    top: 150px;
-    left: 170px;
-}
-#right-colomn{
-    float: right;
-    width: 350px;
-    top: 100px;
-    position: absolute;
-    right: 450px;
-}
-#bioImg{
-    width: 600px;
-    height: 450px;
-}
-#header{
-    font-size: 100px;
-    font-family: 'Jost', sans-serif;
+ #paragraph{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25pt;
 }
 
-.card:first-child{
-    /* color: rgb(153, 132, 115);
-    background-color: white; */
-    height: 700px;
-    width: 100%;
-    position: absolute;
-    top: 250px;
-    /* right: 11em; */
-}
-.card:nth-of-type(2n){
-    /* color: white;
-    background-color: rgb(153, 132, 115); */
-    height: 700px;
-    width: 100%;
-    position: absolute;
-    padding-top: 4em;
-    left: 0;
-}
 #rating{
-    position: absolute;
-    top: 65em;
+  
 }
 #rating-senc{
-    font-size: 80px;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35pt;
     text-align: center;
-}
+    margin-top: -3em;
+    font-weight: bold;
+}/*
 #team{
-    position: relative;
     padding-top: 5em;
     padding-left: 13em;  
 }
-.card:last-child{
-    position: absolute;
-    /* color: rgb(153, 132, 115);
-    background-color: white; */
+.card1s:last-child{
+   
     height: 700px;
     width: 100%;
-    top: 90em;
+  
 }
-/* .box{
-    height: 300px;
-    width: 200px;
-    display: inline-block;
-    border: black solid 2pt;
-    object-fit: cover;
-    margin-top: 2em;
-    margin-left: 5.5em;
-} */
 .teambio{
     font-size: 100px;
     font-family: 'Jost', sans-serif;
     text-align: center;
-    margin-left: -158px;
-}
+}*/
 .wrapper{
-    position: absolute;
-    left: 2.2em;
+    margin-bottom: 4em;
+    margin-left: 12.5em;
    
-}
+} 
 
   
   .flip-card {
@@ -168,7 +126,21 @@ a{
   }
   
   .flip-card-back {
-    background-color: #2980b9;
-    color: white;
+    background-color: rgb(255, 237, 163);
+    color: rgb(164,156,255);
     transform: rotateY(180deg);
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 7em;
   }
+  #team{
+    margin-top: 14em;
+    margin-left: 12em;
+}
+
+.teambio{
+    font-size: 100px;
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}

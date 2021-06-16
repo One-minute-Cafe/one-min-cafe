@@ -44,7 +44,6 @@ function handleSubmit(event){
   const checkOrder3=drink.check3.checked
   // check1,name, size, milk, isHot, drinkType,price
   if(drink.check1.checked){
-
   const name = drink.idee.value;
   console.log(name);
   const size = drink.sizeOr1.value;

@@ -61,7 +61,7 @@ body{
   color: rgb(248, 239, 239);
   text-decoration: none;
   cursor: pointer;
-}
+} */
 
 .modal-header {
   padding: 2px 16px;
@@ -181,7 +181,7 @@ main{
 
 .u-clearfix:after {
   clear: both;
-}
+} */
 
 .u-clearfix {
   *zoom: 1;

@@ -33,7 +33,7 @@
 #name{
     float:left;
     position: relative;
-    top: 20px; 
+    top: 40px; 
    right: 0em;
     margin-left: 10px;
     text-decoration: none;
@@ -42,11 +42,14 @@
     font-weight: 800;
     font-size: 40px;
     list-style: none;
+    
+    
 }
 
 header{
     position: fixed;
    z-index: 5;
+   /* background-color:rgb(255, 237, 163) ; */
 }
 
 /* li{
@@ -60,6 +63,7 @@ header{
     justify-content: space-evenly;
     width: 500px;
     align-items: left;
+    
 
 }
 /* #cafes{
@@ -77,9 +81,11 @@ header{
 .navItem{
    
     position: relative;
+    background-color:rgb(255, 237, 163) ;
 }
 nav ul li a {
     font-family: 'Do Hyeon', sans-serif;
+    
 }
 
 nav ul li a:hover:last-child {
@@ -88,4 +94,8 @@ nav ul li a:hover:last-child {
   nav ul li {
       padding: 1em;
     margin-top: -60px;
+  }
+ #header{
+    background:rgb(255, 237, 163) ;
+    border: 10% solid rgb(255, 237, 163);
   }
