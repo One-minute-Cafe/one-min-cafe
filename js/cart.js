@@ -2,14 +2,14 @@
 // orderForm.addEventListener('submit', handleSubmit);
 const orders = document.getElementById('orders');
 // constructor function to create a basic drink
-function Coffee(name, drinkType, price) {
+function CoffeeOrder(name, drinkType, price) {
     this.name = name;
     this.drinkType = drinkType;
     this.price = price;
-    Coffee.drinks.push(this);
-    savingToLs(Coffee.drinks);
+    CoffeeOrder.drinks.push(this);
+    savingToLs(CoffeeOrder.drinks);
 }
-Coffee.drinks = [];
+CoffeeOrder.drinks = [];
 function handleSubmit(event) {
     event.preventDefault();
     // console.log(event.target);
@@ -17,37 +17,38 @@ function handleSubmit(event) {
     const drinkType = event.target.drinkType.value;
     const price = event.target.price.value;
     //   console.log(price);
-    new Coffee(name, drinkType, price);
+    new CoffeeOrder(name, drinkType, price);
 }
-function savingToLs(nameA) {
+function savingTo(nameA) {
     let convertedArr = JSON.stringify(nameA);
     localStorage.setItem('Order', convertedArr);
     render();
 }
 function gettingOrders() {
     let data = localStorage.getItem('Order');
-    // console.log(data);
+    console.log(data);
     let parsedOrder = JSON.parse(data);
-    // console.log(parsedOrder);
+    console.log(parsedOrder);
     if (parsedOrder) {
-        Coffee.drinks = parsedOrder;
+        CoffeeOrder.drinks = parsedOrder;
         render();
     }
 }
 let total = 0
 function render() {
+    console.log(CoffeeOrder.drinks);
     orders.textContent = '';
     // console.log(Coffee.drinks.length);
-    for (let i = 0; i < Coffee.drinks.length; i++) {
+    for (let i = 0; i < CoffeeOrder.drinks.length; i++) {
         const orderLI = document.createElement('li');
         orderLI.setAttribute('id', `li${i}`)
             // console.log(i);
             // console.log('price',Coffee.drinks[i].price);
-        total = parseInt(Coffee.drinks[i].price) + total
+        total = parseInt(CoffeeOrder.drinks[i].price) + total
         // console.log('total', total);
         // let convTotal=JSON.stringify(total)
         // localStorage.setItem('Totals',convTotal)
-        orderLI.textContent = ` ${Coffee.drinks[i].name}-------------------------${Coffee.drinks[i].price}`;
+        orderLI.textContent = ` ${CoffeeOrder.drinks[i].name}-------------------------${CoffeeOrder.drinks[i].price}`;
         orders.appendChild(orderLI);
         const remove = document.createElement('button')
         remove.setAttribute('id', 'buttRemove')
@@ -63,19 +64,20 @@ function render() {
             // console.log(Coffee.drinks[i].name);
             // console.log(drinkLI.path[1].outerText);
             let text = orderLI.path[1].outerText
-                // console.log(text);
-                // console.log(text.includes(Coffee.drinks[i].name));
+                console.log(text);
+                console.log(text.includes(CoffeeOrder.drinks[i].name));
                 // console.log();
-            if (text.includes(Coffee.drinks[i].name)) {
+            if (text.includes(CoffeeOrder.drinks[i].name)) {
                 // console.log('hi');
                 // console.log('',Coffee.drinks[i]);
                 // console.log( Coffee.drinks);
-                let priceLess = Coffee.drinks[i].price
+                let priceLess = CoffeeOrder.drinks[i].price
                 console.log(priceLess);
-                let arr = Coffee.drinks
+                let arr = CoffeeOrder.drinks
+                
                     // console.log(localStorage.Order.length);
                     // console.log(Coffee.drinks.length);
-                let after_remove = arr.splice(Coffee.drinks[i], 1);
+                let after_remove = arr.splice(CoffeeOrder.drinks[i], 1);
                 total = total - parseInt(priceLess)
                 // console.log('delete', total);
                 let convTotal = JSON.stringify(total)
@@ -83,7 +85,7 @@ function render() {
                     // document.getElementById("total").value = `${total}$`;
                     // console.log(Coffee.drinks);
                     // savingToLs()
-                savingToLs(Coffee.drinks)
+                    savingTo(CoffeeOrder.drinks)
                     //  Coffee.drinks.splice(i, 1); 
                     // for(let i=0;i<Coffee.drinks.length;i++){
                 // }
