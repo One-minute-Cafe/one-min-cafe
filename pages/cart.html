@@ -6,22 +6,29 @@
   <link rel="stylesheet" href="../css/home.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer2.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jost:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
 <body >
   
                 
     <header id="header">
-      <nav id="navbar">
+     
+       
          <div class="left-part">
           <img class="navItem" id ="logo" src="..\img\3.png">
          <h4 id="name">One Minute Cafe<h4></div>
+          <nav id="navbar">
          <ul id="headerList">
-          <li class="navItem" id="home"><a class="nav" href="">Home</a></li>
-          <li class="navItem" id="cafes"><a class="nav" href="">Cafes</a></li>
-          <li class="navItem" id="joinus"><a class="nav" href="">Join Us</a></li>
-          <li class="navItem" id="aboutus"><a class="nav" href="">About Us</a></li>
+          <li class="navItem" id="home"><a class="nav" href="../index.html">Home</a></li>
+          <li class="navItem" id="cafes"><a class="nav" href="cart.html">Cafes</a></li>
+          <li class="navItem" id="joinus"><a class="nav" href="joinUs.html">Join Us</a></li>
+          <li class="navItem" id="aboutus"><a class="nav" href="aboutus.html">About Us</a></li>
         </ul>
-        
       </nav>
       
       <button id="myBtn">Add To Cart <span id="span" ></span></button>
@@ -31,10 +38,25 @@
     <div id="cardhead">
       <img src="" alt="">
       <h1></h1>
-    </div> 
-       <section>
-      <!-- <img src="../img/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg" alt=""  id="img-click"> -->
-    </section >
+    </div>
+    <div class="card-container"  id="img-click" >
+      <div class="card u-clearfix">
+        <div class="card-body">
+          <span class="card-number card-circle subtle">01</span>
+          <span class="card-author subtle">LTUC</span>
+          <h2 class="card-title">One Minute Coffe</h2>
+          <span class="card-description subtle">enjoy in our caffe ..just choose the best coffe we have.</span>
+          <div class="card-read">Coffe</div>
+          <span class="card-tag card-circle subtle">C</span>
+        </div>
+        <img src="../img/roasted-coffee-beans-with-accessories.jpg" alt="" class="card-media"  />
+      </div>
+      <div class="card-shadow"></div>
+    </div>
+
+
+  
+
     <section id="display-form">
 
       <form id="orderForm">
@@ -84,10 +106,10 @@
             
             <label>Milk</label>
             <select name="milk" id="milkOr2">
-              <option value="regular"> Regular </option>
-              <option value="almond"> Almond </option>
-              <option value="coconut"> Coconut </option>
-              <option value="none"> None </option>  
+              <option value="regular" id="regular2"> Regular </option>
+              <option value="almond" id='almond2'> Almond </option>
+              <option value="coconut" id='coconut2'> Coconut </option>
+              <option value="none" id='none2'> None </option>  
             </select>
             <input type="number" name='quantity' id="quantityOrder2">
             <label>Price</label>
@@ -111,11 +133,11 @@
             </select>
             
             <label>Milk</label>
-            <select name="milk" id="milkor3">
-              <option value="regular"> Regular </option>
-              <option value="almond"> Almond </option>
-              <option value="coconut"> Coconut </option>
-              <option value="none"> None </option>  
+            <select name="milk" id="milkOr3">
+              <option value="regular" id="regular3"> Regular </option>
+              <option value="almond" id="almond3"> Almond </option>
+              <option value="coconut" id="coconut3"> Coconut </option>
+              <option value="none" id="none3"> None </option>  
             </select>
             
             <input type="number" name='quantity' id="quantityOrder3">
@@ -179,6 +201,11 @@
 </footer>
   <script src="../js/home.js"></script>
   <script src="../js/cart.js"></script>
+  <script src="../js/app.js"></script>
+  <script
+  src="https://kit.fontawesome.com/bc2402e035.js"
+  crossorigin="anonymous"
+></script>
   <script>
     // Get the modal
     var modal = document.getElementById("myModal");
