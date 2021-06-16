@@ -1,19 +1,7 @@
 
 
 
-/* .navItem{
-   
-    position: relative;
-    display: inline-block;
-    left: 40em;
-    margin-left: 10px;
 
-    top: 10px;
-} */
-/* #pageheader{
-    position:absolute;
-   top: 80px;
-} */
 .nav{
     text-decoration: none;
     font-family: 'Do Hyeon', sans-serif;
@@ -49,7 +37,6 @@
 header{
     position: fixed;
    z-index: 5;
-   /* background-color:rgb(255, 237, 163) ; */
 }
 
 /* li{
@@ -66,18 +53,7 @@ header{
     
 
 }
-/* #cafes{
-    margin-left: 5%;
-}
-#home{
- margin-left: 5%;   
-}
-#joinus{
-    margin-left: 5%;
-}
-#aboutus{
-    margin-left: 5%;
-} */
+
 .navItem{
    
     position: relative;
