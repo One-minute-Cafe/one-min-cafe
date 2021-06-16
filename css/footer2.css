@@ -1,110 +1,110 @@
 .social li {
-    color: rgba(92, 126, 121, 0.897);
-    list-style-type: none;
-    display: inline-table;
-    width: 80px;
-    height: 70px;
-    line-height: 40px;
-    padding: 2%;
-    border: 1.5px solid rgba(138, 133, 153, 0.4);
-    cursor: pointer;
-    margin-left: 25px;
-    margin-bottom: 25px;
-    transition: ease 0.9s;
-    text-align: center;
-    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
-    vertical-align: middle;
-    /* &:hover {
-      color: rgba(167, 146, 129, 1);
-      border: 1px solid rgba(167, 146, 129, 1);
-    } */
-  }
-#h2dena {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 50px;
-    color: rgb(0, 0, 0);
-    font-family: "Amatic SC", cursive;
-  }
-  .social,
-#copyrightSection {
-  margin: 20px 0;
+  color: rgba(92, 126, 121, 0.897);
+  list-style-type: none;
+  display: inline-table;
+  width: 80px;
+  height: 70px;
+  line-height: 40px;
+  padding: 2%;
+  border: 1.5px solid rgba(138, 133, 153, 0.4);
+  cursor: pointer;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  transition: ease 0.9s;
   text-align: center;
+  /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  vertical-align: middle;
+  /* &:hover {
+    color: rgba(167, 146, 129, 1);
+    border: 1px solid rgba(167, 146, 129, 1);
+  } */
+}
+#h2dena {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  font-family: "Amatic SC", cursive;
+}
+.social,
+#copyrightSection {
+margin: 20px 0;
+text-align: center;
 }
 .social li:hover {
-  color: black;
+color: black;
 }
 footer {
-  background-color: hsl(281, 51%, 89%);
-  width: 100%;
-  margin-left: 0%;
+background-color: hsl(281, 51%, 89%);
+width: 100%;
+margin-left: 0%;
 }
 #copyright {
-    color: rgb(61, 53, 35);
-    text-align: center;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    bottom: auto;
-  }
-  #base {
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: lighter;
-    font-size: x-small;
-    font-weight: lighter;
-    color: rgb(61, 53, 53);
-  }
-  #myBtnToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    color: hsl(281, 36%, 64%);
-    cursor: pointer;
-    font-size: 45px;
-    background-color: transparent;
-    border: none;
-    -webkit-text-stroke: 2px black;
-  }
-  #myBtnToTop:hover {
-    color: #555;
-  }
-  #copyright {
-    color: rgb(61, 53, 35);
-    text-align: center;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    bottom: auto;
-  }
-  #base {
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: lighter;
-    font-size: x-small;
-    font-weight: lighter;
-    color: rgb(61, 53, 53);
-  }
-  #ourteam .button {
-    margin-top: 10px;
-    border: none;
-    outline: 5;
-    display: inline-block;
-    padding: 8px;
-    color: rgba(204, 216, 202, 0.897);
-    background-color: rgb(27, 27, 27);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: larger;
-  }
-  /* * {
-    box-sizing: border-box;
-  } */
-  html {
-    /* width: 1366px;
-    margin: 0 auto; */
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
+  color: rgb(61, 53, 35);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  bottom: auto;
+}
+#base {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+  font-size: x-small;
+  font-weight: lighter;
+  color: rgb(61, 53, 53);
+}
+#myBtnToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  color: hsl(281, 36%, 64%);
+  cursor: pointer;
+  font-size: 45px;
+  background-color: transparent;
+  border: none;
+  -webkit-text-stroke: 2px black;
+}
+#myBtnToTop:hover {
+  color: #555;
+}
+#copyright {
+  color: rgb(61, 53, 35);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  bottom: auto;
+}
+#base {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+  font-size: x-small;
+  font-weight: lighter;
+  color: rgb(61, 53, 53);
+}
+#ourteam .button {
+  margin-top: 10px;
+  border: none;
+  outline: 5;
+  display: inline-block;
+  padding: 8px;
+  color: rgba(204, 216, 202, 0.897);
+  background-color: rgb(27, 27, 27);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+}
+/* * {
+  box-sizing: border-box;
+} */
+html {
+  /* width: 1366px;
+  margin: 0 auto; */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
