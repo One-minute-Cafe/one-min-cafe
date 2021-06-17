@@ -1,4 +1,96 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+</head>
+<body>
+  <header style="padding: 5%;background-color: blue;"></header>
+  <main>
+    <form action=""><legend>partner</legend>
+     <div id="partnerAdmin" style="margin-top:10% ;margin-bottom: 10%;">
+       <img src="" id="img-partner" alt="" style="width: 250px;height: 300px;">
+       <h4 id="name"></h4>
+       
+     </div>
+    <div id="driverAdmin"></div>
+    
+    </form>
+  </main>
+  <footer style="padding: 5%;background-color: blue;"></footer>
+
+  <script>
+    partnerArry=[]
+    document.addEventListener('DOMContentLoaded',(event)=>{
+  event.preventDefault();
+  const recentImage=localStorage.getItem('recentImage')
+  if(recentImage){
+      document.getElementById('img-partner').setAttribute('src',recentImage)
+
+      
+    }
+  
+    const reciveInfo=localStorage.getItem('Partner')
+    let parsedPartner = JSON.parse(reciveInfo);
+    if(parsedPartner){
+     console.log(parsedPartner);
+     partnerArry.push(parsedPartner)
+     console.log(partnerArry);
+    }
+ 
+    function renderPartnerData(){
+      for(let i=0;i<partnerArry.length;i++){
+        
+    
+      for (var key in partnerArry) {
+          console.log(partnerArry[key]);
+      }
+
+
+
+      }
+
+    }
+
+renderPartnerData()
+})
+
+
+
+
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/home.css">
@@ -33,7 +125,7 @@
         </div>
       </div> -->
      
-        <br>
+        <!-- <br>
         
         <div style="text-align:center">
           <span class="dot"></span> 
@@ -73,4 +165,4 @@
 <script src="js/home.js"></script>
     
 </body>
-</html>
+</html> --> -->

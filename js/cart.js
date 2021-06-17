@@ -48,7 +48,7 @@ function render() {
         // console.log('total', total);
         // let convTotal=JSON.stringify(total)
         // localStorage.setItem('Totals',convTotal)
-        orderLI.textContent = ` ${CoffeeOrder.drinks[i].name}-------------------------${CoffeeOrder.drinks[i].price}`;
+        orderLI.textContent = ` ${CoffeeOrder.drinks[i].name}----${CoffeeOrder.drinks[i].price}$`;
         orders.appendChild(orderLI);
         const remove = document.createElement('button')
         remove.setAttribute('id', 'buttRemove')

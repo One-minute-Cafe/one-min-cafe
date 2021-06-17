@@ -1,13 +1,10 @@
-
-
-
-
 .nav{
     text-decoration: none;
     font-family: 'Do Hyeon', sans-serif;
     color : white;
     font-weight: 800;
     font-size: 30px;
+
 
 }
 #logo {
@@ -75,4 +72,6 @@ nav ul li a:hover:last-child {
  #header{
    
     width: 30%;
+
   }
+

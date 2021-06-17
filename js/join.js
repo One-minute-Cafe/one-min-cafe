@@ -170,7 +170,7 @@ let submitedPartner=document.getElementById('afterSubmited')
     function loading(){
         localStorage.setItem('recentImage',reader.result)
        
-       console.log(saving);
+    //    console.log(saving);
     }
     let arrOfImage=(this.files.length)-1
         console.log(arrOfImage);
